@@ -20,7 +20,7 @@ module.exports = async (
   logger.info(`starting scraping url: ${url}`);
 
   const page = await openPage({ browser, cookies, url, puppeteerAuthenticate });
-  const profilePageIndicatorSelector = ".pv-profile-section";
+  const profilePageIndicatorSelector = ".pv-top-card";
   try {
     await page.waitForSelector(profilePageIndicatorSelector, {
       timeout: 30000,
@@ -28,8 +28,8 @@ module.exports = async (
   } catch (errSelector) {
     //why doesn't throw error instead of continuing scraping?
     //because it can be just a false negative meaning LinkedIn only changed that selector but everything else is fine :)
-    const notLogged = await page.$(".show-login");
-    const authWall = await page.$(".authwall-join-form__title");
+    const notLogged = await page.$('#public_profile_contextual-sign-in > div > section > main > div');
+    const authWall = await page.$('a[href*="signup"]');
     if (notLogged || authWall) {
       browser.close();
       throw new Error("NOT_LOGGED");
