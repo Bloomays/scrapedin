@@ -13,8 +13,8 @@ const template = {
     }
   },
   about: {
-    selector:
-      'div .pv-shared-text-with-see-more.t-14.t-normal.t-black.display-flex.align-items-center',
+    selector: "//section[contains(., 'Infos')]//div[contains(@class, 'display-flex') and contains(@class, 'ph5') and contains(@class, 'pv3')]",
+    //selector: 'div .pv-shared-text-with-see-more.t-14.t-normal.t-black.display-flex.align-items-center',
     fields: {
       text: 'span[class=visually-hidden]'
     }
@@ -67,7 +67,7 @@ const template = {
     }
   },
   skills: {
-    selector: '//a[contains(@href, "details/skills")]',
+    selector: '//a[contains(@href, "details/skills?profile")]',
     fields: {
       title: '#main > section > div.artdeco-tabs.artdeco-tabs--size-t-48.ember-view > div.artdeco-tabpanel.active.ember-view > div > div > div.scaffold-finite-scroll__content > ul > li > div > div > div > div > a > div > span  > span:nth-child(1)',
     }

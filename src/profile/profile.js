@@ -20,7 +20,7 @@ module.exports = async (
   logger.info(`starting scraping url: ${url}`);
 
   const page = await openPage({ browser, cookies, url, puppeteerAuthenticate });
-  const profilePageIndicatorSelector = ".pv-top-card";
+  /*const profilePageIndicatorSelector = ".pv-top-card";
   try {
     await page.waitForSelector(profilePageIndicatorSelector, {
       timeout: 30000,
@@ -35,7 +35,32 @@ module.exports = async (
       throw new Error("NOT_LOGGED");
     }
     logger.warn("profile selector was not found", errSelector.message);
+  }*/
+  const profilePageIndicatorSelector = ".pv-top-card";
+  const notLoggedSelector = '#public_profile_contextual-sign-in > div > section > main > div';
+  const authWallSelector = 'a[href*="signup"]';
+  const timeout = 30000;
+  try {
+    const result = await Promise.race([
+      page.waitForSelector(profilePageIndicatorSelector),
+      page.waitForSelector(notLoggedSelector),
+      page.waitForSelector(authWallSelector),
+      new Promise((_, reject) => setTimeout(() => reject(new Error(`Promise timed out after ${timeout}ms`)), timeout)),
+    ]);
+    const notLogged = await page.$(notLoggedSelector);
+    const authWall = await page.$(authWallSelector);
+    if (notLogged || authWall) {
+      throw new Error("NOT_LOGGED");
+    }
+  } catch (err) {
+    if (err.message.includes("NOT_LOGGED")) {
+      browser.close();
+      throw new Error("NOT_LOGGED");
+    } else {
+      logger.warn("Timeout waiting for selector");
+    }
   }
+
   try {
     logger.info("scrolling page to the bottom");
     await scrollToPageBottom(page);
