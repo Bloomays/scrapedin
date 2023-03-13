@@ -2,7 +2,8 @@ const logger = require("../logger")(__filename);
 const seeMoreButtons = [
   {
     id: "SHOW_MORE_ABOUT",
-    selector: ".inline-show-more-text__button",
+    selector: "//section[contains(., 'Infos')]//button[contains(@class, 'inline-show-more-text__button')]",
+    //selector: ".inline-show-more-text__button",
   },
   // {
   //   id: "SHOW_MORE_EXPERIENCES",
@@ -29,7 +30,7 @@ const seeMoreButtons = [
 const clickAll = async (page) => {
   for (let i = 0; i < seeMoreButtons.length; i++) {
     const button = seeMoreButtons[i];
-    const elems = await page.$$(button.selector);
+    const elems = await page.$x(button.selector);
 
     for (let j = 0; j < elems.length; j++) {
       const elem = elems[j];
