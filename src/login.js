@@ -8,7 +8,7 @@ module.exports = async (browser, email, password) => {
   logger.info(`logging at: ${url}`)
 
   await page.goto(url)
-  await page.waitFor('#username')
+  await page.waitForSelector('#username')
 
   await page.$('#username')
     .then((emailElement) => emailElement.type(email))
@@ -18,7 +18,7 @@ module.exports = async (browser, email, password) => {
   await page.$x("//button[contains(text(), 'Sign in')]")
     .then((button) => button[0].click())
 
-  return page.waitFor('input[role=combobox]', {
+  return page.waitForSelector('input[role=combobox]', {
     timeout: 15000
   })
     .then(async () => {
