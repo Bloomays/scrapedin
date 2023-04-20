@@ -276,8 +276,9 @@ const prepareBrowserMock = (isIncompleteProfile) => {
     this.setUserAgent = mock().once().resolves()
     this.setExtraHTTPHeaders = mock().once().resolves()
     this.setViewport = mock().once().resolves()
-    this.waitFor = mock().once().resolves()
-
+    this.waitForSelector = mock().once().resolves()
+    this.on = mock().once().resolves()
+    this.$x = mock().once().resolves([fakeEvalResult])
     this.evaluate = mock()
       .twice()
       .withExactArgs(match.func)
@@ -331,7 +332,8 @@ const prepareBrowserMock = (isIncompleteProfile) => {
   Page.prototype.$$ = () => [new Page()]
 
   const browser = {
-    newPage: mock().once().withExactArgs().resolves(new Page())
+    newPage: mock().once().withExactArgs().resolves(new Page()),
+    close: mock().once().resolves()
   }
 
   return browser

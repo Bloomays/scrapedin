@@ -11,6 +11,7 @@ const agents = [
 ]
 
 module.exports = ({ browser, cookies, url, puppeteerAuthenticate }) => new Promise( async (resolve, reject) => {
+  try {
   const page = await browser.newPage()
   page.on('error', err => {reject(err)})
 
@@ -31,4 +32,8 @@ module.exports = ({ browser, cookies, url, puppeteerAuthenticate }) => new Promi
   await page.goto(url)
 
   resolve(page)
+  }
+  catch(error) {
+    reject(error);
+  }
 })
