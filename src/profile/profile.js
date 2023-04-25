@@ -9,6 +9,34 @@ const cleanProfileData = require("./cleanProfileData");
 
 const logger = require("../logger")(__filename);
 
+const profilePageIndicatorSelector = ".pv-top-card";
+const notLoggedSelector = '.join-form';
+const authWallSelector = 'a[href*="signup"]';
+
+const testLoginElementsInpage = async (page, browser) => {
+  const options = {
+    timeout: 3000,
+  }
+  try {
+    // ensure we are not blocked by login page
+    await Promise.race([
+      page.waitForSelector(notLoggedSelector, options),
+      page.waitForSelector(authWallSelector, options)
+    ]);
+    throw new Error("FOUND_LOGIN_SELECTOR");
+  } catch (err) {
+    browser.close();
+    if (err.message.includes("FOUND_LOGIN_SELECTOR")) {
+      throw new Error("NOT_LOGGED");
+    }
+    if (err.message.includes(notLoggedSelector) || err.message.includes(authWallSelector)) {
+      throw new Error("CANT_ACCESS_PROFIL");
+    } else {
+      throw err;
+    }
+  }
+}
+
 module.exports = async (
   browser,
   cookies,
@@ -18,6 +46,7 @@ module.exports = async (
   puppeteerAuthenticate = undefined
 ) => {
   logger.info(`starting scraping url: ${url}`);
+
 
   const page = await openPage({ browser, cookies, url, puppeteerAuthenticate });
   /*const profilePageIndicatorSelector = ".pv-top-card";
@@ -36,28 +65,20 @@ module.exports = async (
     }
     logger.warn("profile selector was not found", errSelector.message);
   }*/
-  const profilePageIndicatorSelector = ".pv-top-card";
-  const notLoggedSelector = '#public_profile_contextual-sign-in > div > section > main > div';
-  const authWallSelector = 'a[href*="signup"]';
-  const timeout = 30000;
+
+  const options = {
+    timeout: 3000,
+  }
+
   try {
-    const result = await Promise.race([
-      page.waitForSelector(profilePageIndicatorSelector),
-      page.waitForSelector(notLoggedSelector),
-      page.waitForSelector(authWallSelector),
-      new Promise((_, reject) => setTimeout(() => reject(new Error(`Promise timed out after ${timeout}ms`)), timeout)),
-    ]);
-    const notLogged = await page.$(notLoggedSelector);
-    const authWall = await page.$(authWallSelector);
-    if (notLogged || authWall) {
-      throw new Error("NOT_LOGGED");
-    }
+    //look for profile main card
+    await page.waitForSelector(profilePageIndicatorSelector, options);
   } catch (err) {
-    if (err.message.includes("NOT_LOGGED")) {
-      browser.close();
-      throw new Error("NOT_LOGGED");
+    if (err.message.includes(profilePageIndicatorSelector)) {
+      await testLoginElementsInpage(page, browser);
     } else {
-      logger.warn("Timeout waiting for selector");
+      browser.close();
+      throw err;
     }
   }
 

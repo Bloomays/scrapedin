@@ -20,5 +20,5 @@ module.exports = async (page) => {
     }
   }
 
-  logger.warn('page bottom not found')
+  logger.error('page bottom not found')
 }
