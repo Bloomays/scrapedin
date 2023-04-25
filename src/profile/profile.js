@@ -46,32 +46,14 @@ module.exports = async (
   puppeteerAuthenticate = undefined
 ) => {
   logger.info(`starting scraping url: ${url}`);
-
-
   const page = await openPage({ browser, cookies, url, puppeteerAuthenticate });
-  /*const profilePageIndicatorSelector = ".pv-top-card";
-  try {
-    await page.waitForSelector(profilePageIndicatorSelector, {
-      timeout: 30000,
-    });
-  } catch (errSelector) {
-    //why doesn't throw error instead of continuing scraping?
-    //because it can be just a false negative meaning LinkedIn only changed that selector but everything else is fine :)
-    const notLogged = await page.$('#public_profile_contextual-sign-in > div > section > main > div');
-    const authWall = await page.$('a[href*="signup"]');
-    if (notLogged || authWall) {
-      browser.close();
-      throw new Error("NOT_LOGGED");
-    }
-    logger.warn("profile selector was not found", errSelector.message);
-  }*/
-
   const options = {
     timeout: 3000,
   }
 
   try {
     //look for profile main card
+    logger.info(`starting profilePageIndicatorSelector: ${profilePageIndicatorSelector}`);
     await page.waitForSelector(profilePageIndicatorSelector, options);
   } catch (err) {
     if (err.message.includes(profilePageIndicatorSelector)) {
