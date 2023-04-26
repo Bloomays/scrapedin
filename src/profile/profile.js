@@ -48,7 +48,7 @@ module.exports = async (
   logger.info(`starting scraping url: ${url}`);
   const page = await openPage({ browser, cookies, url, puppeteerAuthenticate });
   const options = {
-    timeout: 3000,
+    timeout: 10000,
   }
 
   try {

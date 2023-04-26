@@ -1,5 +1,7 @@
+const logger = require("./logger")(__filename);
+
 const agents = [
-  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
   // "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
   // "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
   // "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:34.0) Gecko/20100101 Firefox/34.0",
@@ -28,8 +30,9 @@ module.exports = ({ browser, cookies, url, puppeteerAuthenticate }) => new Promi
   if (puppeteerAuthenticate) {
     await page.authenticate(puppeteerAuthenticate)
   }
+  logger.info(`starting goto url: ${url}`);
 
-  await page.goto(url)
+  await page.goto(url, {waitUntil: 'domcontentloaded',})
 
   resolve(page)
   }
