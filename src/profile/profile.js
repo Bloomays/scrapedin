@@ -24,7 +24,7 @@ const testLoginElementsInpage = async (page, browser) => {
       page.waitForSelector(notLoggedSelector, options),
       page.waitForSelector(authWallSelector, options)
     ]);
-    await takeScreenshotAndThrow(page, "FOUND_LOGIN_SELECTOR");
+    throw new Error("FOUND_LOGIN_SELECTOR");
   } catch (err) {
     if (err.message.includes("FOUND_LOGIN_SELECTOR")) {
       await takeScreenshotAndThrow(page, "NOT_LOGGED");
@@ -32,7 +32,7 @@ const testLoginElementsInpage = async (page, browser) => {
     if (err.message.includes(notLoggedSelector) || err.message.includes(authWallSelector)) {
       await takeScreenshotAndThrow(page, "CANT_ACCESS_PROFIL");
     } else {
-      throw err;
+      await takeScreenshotAndThrow(page, err.message);
     }
   } finally {
     await browser.close();
