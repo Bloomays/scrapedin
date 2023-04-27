@@ -6,6 +6,7 @@ const seeMoreButtons = require("./seeMoreButtons");
 const contactInfo = require("./contactInfo");
 const template = require("./profileScraperTemplate");
 const cleanProfileData = require("./cleanProfileData");
+const { takeScreenshotAndThrow } = require("../customerError");
 
 const logger = require("../logger")(__filename);
 
@@ -25,15 +26,16 @@ const testLoginElementsInpage = async (page, browser) => {
     ]);
     throw new Error("FOUND_LOGIN_SELECTOR");
   } catch (err) {
-    browser.close();
     if (err.message.includes("FOUND_LOGIN_SELECTOR")) {
-      throw new Error("NOT_LOGGED");
+      await takeScreenshotAndThrow(page, "NOT_LOGGED");
     }
     if (err.message.includes(notLoggedSelector) || err.message.includes(authWallSelector)) {
-      throw new Error("CANT_ACCESS_PROFIL");
+      await takeScreenshotAndThrow(page, "CANT_ACCESS_PROFIL");
     } else {
-      throw err;
+      await takeScreenshotAndThrow(page, err.message);
     }
+  } finally {
+    await browser.close();
   }
 }
 
@@ -59,7 +61,7 @@ module.exports = async (
     if (err.message.includes(profilePageIndicatorSelector)) {
       await testLoginElementsInpage(page, browser);
     } else {
-      browser.close();
+      await browser.close();
       throw err;
     }
   }
@@ -146,10 +148,14 @@ module.exports = async (
     };
 
     const cleanedProfile = cleanProfileData(rawProfile);
-    browser.close();
+    await browser.close();
     return cleanedProfile;
-  } catch (unhandledError) {
-    browser.close();
-    throw unhandledError;
+  }
+  catch (unhandledError) {
+    await takeScreenshotAndThrow(page, unhandledError.message);
+  }
+  finally {
+    logger.info('closing browser')
+    await browser.close();
   }
 };
