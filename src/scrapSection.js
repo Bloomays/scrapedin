@@ -1,3 +1,5 @@
+const logger = require("./logger")(__filename);
+
 const scrapSelectorFields = (selector, section) => async (scrapedObjectPromise, fieldKey) => {
   const scrapedObject = await scrapedObjectPromise
   const field = section.fields[fieldKey]
@@ -47,12 +49,14 @@ const scrapSelector = (selector, section) =>
 module.exports = async (page, section) => {
   let sectionSelectors;
   if (!section.selector.startsWith('/')) {
-    sectionSelectors = await page.$$(section.selector)
+    sectionSelectors = await page.$$(section.selector);
   } else {
-    sectionSelectors = await page.$x(section.selector)
+    sectionSelectors = await page.$x(section.selector);
   }
   const scrapedPromises = sectionSelectors
     .map((selector) => scrapSelector(selector, section))
-
+  
+  logger.info(page.url())
   return Promise.all(scrapedPromises)
+  
 }

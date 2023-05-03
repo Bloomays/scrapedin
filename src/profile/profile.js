@@ -50,9 +50,8 @@ module.exports = async (
   logger.info(`starting scraping url: ${url}`);
   const page = await openPage({ browser, cookies, url, puppeteerAuthenticate });
   const options = {
-    timeout: 10000,
+    timeout: 15000,
   }
-
   try {
     //look for profile main card
     logger.info(`starting profilePageIndicatorSelector: ${profilePageIndicatorSelector}`);
