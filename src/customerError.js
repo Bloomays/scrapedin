@@ -8,10 +8,9 @@ class ScreenshotError extends Error {
     }
   }
 
-  const takeScreenshotAndThrow = async(page, errorName) => {
-    let image;
+  const takeScreenshotAndThrow = async(page, errorName, image) => {
     try {
-        if (page) {
+        if (page && !image) {
             image = await page.screenshot({encoding: 'base64'});
         }
     }

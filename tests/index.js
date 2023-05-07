@@ -2,7 +2,7 @@ const fs = require("fs");
 (async () => {
     const linkedins = 
     [
-        'https://www.linkedin.com/in/al-hassane-moussa-541706100/'
+        'https://www.linkedin.com/in/jgranon/'
         /*'https://www.linkedin.com/in/lina-morel-9b1b7b1b8/',
         'https://www.linkedin.com/in/rosa-barbet-69a6bb220/',
         'https://www.linkedin.com/in/aurore-veneto-5a6034213/'*/

@@ -14,7 +14,7 @@ const profilePageIndicatorSelector = ".pv-top-card";
 const notLoggedSelector = '.join-form';
 const authWallSelector = 'a[href*="signup"]';
 
-const testLoginElementsInpage = async (page, browser) => {
+const testLoginElementsInpage = async (page, browser, image) => {
   const options = {
     timeout: 3000,
   }
@@ -24,13 +24,13 @@ const testLoginElementsInpage = async (page, browser) => {
       page.waitForSelector(notLoggedSelector, options),
       page.waitForSelector(authWallSelector, options)
     ]);
-    throw new Error("FOUND_LOGIN_SELECTOR");
+    await takeScreenshotAndThrow(page, "FOUND_LOGIN_SELECTOR", image);
   } catch (err) {
     if (err.message.includes("FOUND_LOGIN_SELECTOR")) {
-      await takeScreenshotAndThrow(page, "NOT_LOGGED");
+      await takeScreenshotAndThrow(page, "NOT_LOGGED", image);
     }
     if (err.message.includes(notLoggedSelector) || err.message.includes(authWallSelector)) {
-      await takeScreenshotAndThrow(page, "CANT_ACCESS_PROFIL");
+      await takeScreenshotAndThrow(page, "CANT_ACCESS_PROFIL", image);
     } else {
       await takeScreenshotAndThrow(page, err.message);
     }
@@ -59,7 +59,8 @@ module.exports = async (
     await page.waitForSelector(profilePageIndicatorSelector, options);
   } catch (err) {
     if (err.message.includes(profilePageIndicatorSelector)) {
-      await testLoginElementsInpage(page, browser);
+      const image = await page.screenshot({encoding: 'base64'});
+      await testLoginElementsInpage(page, browser, image);
     } else {
       await browser.close();
       throw err;
