@@ -11,6 +11,10 @@ module.exports = (profile) => {
   profile.profile.summary = profile?.about?.text
 
   profile.positions?.forEach((position) => {
+    if (position.companyNameWithRole && !position.companyName) {
+      position.companyName = position.companyNameWithRole + ''; // clone
+      position.companyNameWithRole = undefined; 
+    }
     if(position.title){
         position.title = position.title.replace('Company Name\n', '').split('\n')[0]
     }
