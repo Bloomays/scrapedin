@@ -12,7 +12,7 @@ module.exports = (profile) => {
 
   profile.positions?.forEach((position) => {
     if(position.title){
-        position.title = position.title.replace('Company Name\n', '')
+        position.title = position.title.replace('Company Name\n', '').split('\n')[0]
     }
     if(position.description) {
       position.description = position.description.replace('See more', '');
@@ -22,7 +22,7 @@ module.exports = (profile) => {
     if(position.roles) {
       position.roles.forEach((role) => {
         if(role.title) {
-          role.title = role.title.replace('Title\n', '')
+          role.title = role.title.replace('Title\n', '').split('\n')[0]
         }
         if(role.description) {
           role.description = role.description.replace('See more', '')
