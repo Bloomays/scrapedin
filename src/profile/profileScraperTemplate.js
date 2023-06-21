@@ -22,7 +22,7 @@ const template = {
   positions: {
     selector: "//*[@id='experience']/following-sibling::div/ul/li",
     fields: {
-      title: 'div.display-flex.flex-column.full-width > div > span',
+      title: 'div.display-flex.flex-column.full-width > div > div > div > div > div > div > span',
       link: {
         selector: 'a',
         attribute: 'href'

@@ -8,7 +8,7 @@ const scrapSelectorFields = (selector, section) => async (scrapedObjectPromise, 
   const fieldSelectorString = await field.selector
     ? field.selector
     : field
-
+  
     let isFieldPresent
     if (!fieldSelectorString.startsWith('/')) {
       isFieldPresent = await selector.$(fieldSelectorString)

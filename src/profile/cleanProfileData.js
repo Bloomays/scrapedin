@@ -12,7 +12,7 @@ module.exports = (profile) => {
 
   profile.positions?.forEach((position) => {
     if(position.title){
-        position.title = position.title.replace('Company Name\n', '')?.substring(0, position.title.indexOf('\n'))
+        position.title = position.title.replace('Company Name\n', '')
     }
     if(position.description) {
       position.description = position.description.replace('See more', '');
