@@ -65,3 +65,5 @@ typings/
 .next
 
 # Package lock was removed from the repo as of b0dad2
+
+tests/*.json

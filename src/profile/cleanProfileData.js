@@ -11,8 +11,12 @@ module.exports = (profile) => {
   profile.profile.summary = profile?.about?.text
 
   profile.positions?.forEach((position) => {
+    if (position.companyNameWithRole && !position.companyName) {
+      position.companyName = position.companyNameWithRole + ''; // clone
+      position.companyNameWithRole = undefined; 
+    }
     if(position.title){
-        position.title = position.title.replace('Company Name\n', '')?.substring(0, position.title.indexOf('\n'))
+        position.title = position.title.replace('Company Name\n', '').split('\n')[0]
     }
     if(position.description) {
       position.description = position.description.replace('See more', '');
@@ -22,7 +26,7 @@ module.exports = (profile) => {
     if(position.roles) {
       position.roles.forEach((role) => {
         if(role.title) {
-          role.title = role.title.replace('Title\n', '')
+          role.title = role.title.replace('Title\n', '').split('\n')[0]
         }
         if(role.description) {
           role.description = role.description.replace('See more', '')
