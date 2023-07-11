@@ -1,17 +1,16 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Test CI
+name: CRON Test CI
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [ "*" ]
-  pull_request:
-    branches: [ "develop" ]
-
+  schedule:
+    - cron:  '0 6 * * *'    # At every day
 jobs:
   build:
+
+    env:
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
 
     runs-on: ubuntu-latest
     steps:
@@ -21,6 +20,20 @@ jobs:
       with:
         node-version-file: '.nvmrc'
         cache: 'npm'
+    - name: Notify slack success
+      if: success()
+      uses: voxmedia/github-action-slack-notify-build@v1
+      with:
+        channel: corpo-product-scrapedin
+        status: SUCCESS
+        color: good
+    - name: Notify slack fail
+      if: failure()
+      uses: voxmedia/github-action-slack-notify-build@v1
+      with:
+        channel: corpo-product-scrapedin
+        status: FAILED
+        color: danger
     - name: Echo secrets
       run: |
           echo $COOKIE_FILE >> tests/cookie.json
