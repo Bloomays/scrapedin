@@ -360,6 +360,11 @@ CTO, on fait tout pour te faciliter la vie !",
       "location": "Ville de Paris, Île-de-France, France",
       "remotePolicy": "Hybride",
       "roles": [],
+      "skills": [
+        {
+          "title": "Growth hacking",
+        },
+      ],
       "title": "Growth Hacker",
       "url": "https://www.linkedin.com/company/14823353/",
     },
