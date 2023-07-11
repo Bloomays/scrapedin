@@ -35,7 +35,7 @@ test.each(urls)("should get profiles properly", async(url) => {
         };
         const profileScraper = await scrapedin(options);
         const profile = await profileScraper(url);
-        console.log(util.inspect(profile, false, null, true));
+        // console.log(util.inspect(profile, false, null, true));
         fs.writeFileSync(__dirname+'/' + profile.profile.name + '.json', JSON.stringify(profile, null, 4));
         expect(profile).toMatchSnapshot();
     }
