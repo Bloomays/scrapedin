@@ -13,6 +13,7 @@ exports[`should get profiles properly 1`] = `
       "date1": "1998",
       "date2": "2003",
       "degree": "Master, Computer Science",
+      "title": "Université Paris-Sud",
       "url": "https://www.linkedin.com/company/1165891/",
     },
   ],
@@ -31,7 +32,18 @@ exports[`should get profiles properly 1`] = `
     {
       "companyName": "Doctrine",
       "companyNameWithRole": undefined,
-      "description": "Dites adieu aux doutes. 
+      "link": "https://www.linkedin.com/company/10511637/",
+      "roles": [
+        {
+          "date1": "sept. 2021",
+          "date2": "aujourd’hui",
+          "location": "Paris, Île-de-France, France",
+          "title": "Data Engineer",
+        },
+        {
+          "date1": "juin 2019",
+          "date2": "aujourd’hui",
+          "description": "Dites adieu aux doutes. 
 
 Construisez vos stratégies et conseils juridiques sur des certitudes. 
 
@@ -46,11 +58,8 @@ Essayez-le gratuitement ici : https://www.doctrine.fr/document-analyzer
 💚 Rejoignez l'équipe https://www.welcometothejungle.com/fr/companies/doctrine/jobs
 
 🚨 Retrouvez les dernières nouveautés de la plateforme : https://nouveautes.doctrine.fr",
-      "link": "https://www.linkedin.com/company/10511637/",
-      "roles": [
-        {
-          "date1": "Paris, Île-de-France, France",
-          "title": "Data Engineer",
+          "location": "Paris Area, France",
+          "title": "Backend Developer",
         },
       ],
       "url": "https://www.linkedin.com/company/10511637/",
@@ -112,11 +121,23 @@ The thinking is, as a result, that of an upstream to downstream approach where p
       "title": "Client-side Javascript Developer",
       "url": "https://www.linkedin.com/company/110365/",
     },
+    {
+      "companyName": "INRIA Futurs, LRI, Univ. Paris-Sud",
+      "date1": "2005",
+      "date2": "2008",
+      "description": "Incrementing and improving a web-based scientific conference management system coded with PHP/MySQL/Javascript.
+Involved adding features, testing, fixing bugs and interfacing with a researcher to gather business knowledge about conferences.",
+      "link": "https://www.linkedin.com/search/results/all/?keywords=INRIA+Futurs%2C+LRI%2C+Univ%2E+Paris-Sud",
+      "roles": [],
+      "title": "Ingénieur Expert",
+      "url": "https://www.linkedin.com/search/results/all/?keywords=INRIA+Futurs%2C+LRI%2C+Univ%2E+Paris-Sud",
+    },
   ],
   "profile": {
     "connections": "264 relations",
     "headline": "Data Engineer at Doctrine",
     "imageurl": "https://media.licdn.com/dms/image/C4E03AQGugwctMbrDLw/profile-displayphoto-shrink_200_200/0/1622281313791?e=1694649600&v=beta&t=NAyuTQe7RcOSHSkxc88iu0g_azRfE-hLr4K4KHvDpec",
+    "location": "Paris et périphérie",
     "name": "Bertrand Chardon",
     "summary": "Ruby on Rails / Node.js developer with a knack for bleeding edge technologies. Specialties: front/back end web development.",
   },
@@ -299,20 +320,21 @@ exports[`should get profiles properly 2`] = `
   "educations": [
     {
       "date1": "2018",
-      "degree": "2018",
+      "title": "Epitech Executive",
       "url": "https://www.linkedin.com/company/3059194/",
     },
     {
       "date1": "1999",
       "date2": "2000",
       "degree": "DU MBR, Multimédia, Bases de données et Réseaux",
-      "fieldOfStudy": "DU MBR, Multimédia, Bases de données et Réseaux",
+      "title": "Université de Nice-Sophia Antipolis",
       "url": "https://www.linkedin.com/search/results/all/?keywords=Universit%C3%A9+de+Nice-Sophia+Antipolis",
     },
     {
       "date1": "1997",
       "date2": "1999",
       "degree": "IUT Informatique, Génie Logiciel, Informatique",
+      "title": "Université Côte d’Azur",
       "url": "https://www.linkedin.com/company/10826935/",
     },
   ],
@@ -360,7 +382,8 @@ L’approche holistique de Bloomays autour de la fonction recrutement :
       "url": "https://www.linkedin.com/company/68220421/",
     },
     {
-      "companyName": "Fenty LVMH · Freelance",
+      "companyName": "Fenty LVMH",
+      "contractType": "Freelance",
       "date1": "avr. 2018",
       "date2": "avr. 2020",
       "description": "Dans la cadre de la création d'une maison en mode startup pour le compte du groupe LVMH, j'ai accompagné cette nouvelle marque de la structuration des équipes du C-Level aux opérationnels. J'ai mis en place avec la collaboration du groupe l'ensemble du système d'information ainsi que l'architecture e-commerce et la supply chain. Je les ai ensuite accompagné pendant deux ans en tant que mentor sur de nombreux aspects stratégiques (CRM, e-commerce, performance, PIM, DAM, ...)",
@@ -389,10 +412,45 @@ L’approche holistique de Bloomays autour de la fonction recrutement :
       "title": "Technical Strategist / CTO",
       "url": "https://www.linkedin.com/company/1707956/",
     },
+    {
+      "companyName": "Planete Interactive - Isobar France",
+      "companyNameWithRole": undefined,
+      "link": "https://www.linkedin.com/company/44980/",
+      "roles": [
+        {
+          "date1": "janv. 2009",
+          "date2": "sept. 2011",
+          "description": "Recherche et développement appliquée aux innovations marketing.
+Coordination technique des entités du groupe.
+Gestion des partenariats technique et des prestataires de service.
+Mise en place des normes de développement.",
+          "title": "Directeur des développements et des technologies",
+        },
+        {
+          "date1": "janv. 2005",
+          "date2": "déc. 2008",
+          "description": "Direction Technique des équipes de développement .Net / PHP / Java
+Architecture logicielle des sites e-commerce
+R&D
+Sécurité et performance des sites",
+          "skills": [
+            {
+              "title": "jQuery",
+            },
+            {
+              "title": ".NET Framework",
+            },
+          ],
+          "title": "CTO",
+        },
+      ],
+      "url": "https://www.linkedin.com/company/44980/",
+    },
   ],
   "profile": {
     "connections": "Plus de 500 relations",
     "headline": "CTO On Demand & Partner @Bloomays.com",
+    "location": "Paris, Île-de-France, France",
     "name": "Loïc Calvy",
     "summary": "+ de 20 ans d’expérience dans le digital - Conseil stratégique au comité de direction - Rôle transversal de coordination avec les pôles marketing, communication et vente - Capacité à travailler pour un client ou avec une équipe produit / Product ownership - Construction de produits de l’initialisation à l’industrialisation : conception, architecture et scalabilité - Conception et création de plateforme de Cloud SAAS taux de dispo 99,99 % - Mise en place d’organisations agiles : plan de développement, recrutement et management (40 personnes) - Expertises : Web & Mobile & Conversationnel, Agilité, Méthodologie Lean, Tests, Sécurité et Data privacy",
   },
@@ -459,185 +517,7 @@ I was impressed by the way he manages people, and after 2 1/2 years working next
     "received": [],
     "receivedCount": "0",
   },
-  "skills": [
-    {
-      "title": "Node.js",
-    },
-    {
-      "title": "Amazon Web Services",
-    },
-    {
-      "title": "IT architectures",
-    },
-    {
-      "title": "User Experience",
-    },
-    {
-      "title": "Scrum",
-    },
-    {
-      "title": "Web Applications",
-    },
-    {
-      "title": "Mobile Technology",
-    },
-    {
-      "title": "E-commerce",
-    },
-    {
-      "title": "UX",
-    },
-    {
-      "title": "Web Project Management",
-    },
-    {
-      "title": "Project Delivery",
-    },
-    {
-      "title": "Network Engineering",
-    },
-    {
-      "title": "Performance Tuning",
-    },
-    {
-      "title": "SEO",
-    },
-    {
-      "title": "Gestion de projet web",
-    },
-    {
-      "title": "Optimisation des moteurs de recherche (OMR)",
-    },
-    {
-      "title": "Kanban",
-    },
-    {
-      "title": "HTML5",
-    },
-    {
-      "title": "CSS",
-    },
-    {
-      "title": "C#",
-    },
-    {
-      "title": "IT architectures",
-    },
-    {
-      "title": "User Experience",
-    },
-    {
-      "title": "Scrum",
-    },
-    {
-      "title": "Web Applications",
-    },
-    {
-      "title": "Mobile Technology",
-    },
-    {
-      "title": "E-commerce",
-    },
-    {
-      "title": "UX",
-    },
-    {
-      "title": "Web Project Management",
-    },
-    {
-      "title": "Project Delivery",
-    },
-    {
-      "title": "Network Engineering",
-    },
-    {
-      "title": "Performance Tuning",
-    },
-    {
-      "title": "SEO",
-    },
-    {
-      "title": "Gestion de projet web",
-    },
-    {
-      "title": "Optimisation des moteurs de recherche (OMR)",
-    },
-    {
-      "title": "Kanban",
-    },
-    {
-      "title": "WebSockets",
-    },
-    {
-      "title": "Kinect",
-    },
-    {
-      "title": "Web Performance",
-    },
-    {
-      "title": "DevOps",
-    },
-    {
-      "title": "Computer Architecture",
-    },
-    {
-      "title": "Node.js",
-    },
-    {
-      "title": "Amazon Web Services",
-    },
-    {
-      "title": "HTML5",
-    },
-    {
-      "title": "CSS",
-    },
-    {
-      "title": "C#",
-    },
-    {
-      "title": "MySQL",
-    },
-    {
-      "title": "CSS3",
-    },
-    {
-      "title": "Android",
-    },
-    {
-      "title": "CMS",
-    },
-    {
-      "title": "Operating Systems",
-    },
-    {
-      "title": "iOS",
-    },
-    {
-      "title": "ActionScript",
-    },
-    {
-      "title": "Amazon S3",
-    },
-    {
-      "title": ".NET Framework",
-    },
-    {
-      "title": "Cloudflare",
-    },
-    {
-      "title": "Docker",
-    },
-    {
-      "title": "Microsoft Azure",
-    },
-    {
-      "title": "React.js",
-    },
-    {
-      "title": "Vue.js",
-    },
-  ],
+  "skills": [],
   "volunteerExperience": [],
 }
 `;
