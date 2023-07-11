@@ -312,381 +312,176 @@ Involved adding features, testing, fixing bugs and interfacing with a researcher
 exports[`should get profiles properly 2`] = `
 {
   "about": {
-    "text": "+ de 20 ans d’expérience dans le digital - Conseil stratégique au comité de direction - Rôle transversal de coordination avec les pôles marketing, communication et vente - Capacité à travailler pour un client ou avec une équipe produit / Product ownership - Construction de produits de l’initialisation à l’industrialisation : conception, architecture et scalabilité - Conception et création de plateforme de Cloud SAAS taux de dispo 99,99 % - Mise en place d’organisations agiles : plan de développement, recrutement et management (40 personnes) - Expertises : Web & Mobile & Conversationnel, Agilité, Méthodologie Lean, Tests, Sécurité et Data privacy",
+    "text": "Quoi de mieux qu'un spécialiste de la tech 🌐 pour recruter un profil tech, un spécialiste en Ressources humaines pour recruter un RH. Logique non ? 😁 Je ne me contente pas de remplir des cases et proposer des profils. Je suis avant tout à l’écoute de tout challenge en matière de staffing. Freelances, on vous propose des missions, vous disposez. Décisionnaires de la tech et du digital, pas besoin de vous connecter, de définir vos recherches de compétences, on le fait pour vous, on vous propose des profils ad’hoc, vite. A tous, nous gérons la mission de la façon la plus humaine possible, un suivi hebdomadaire et une marge transparente.",
   },
   "accomplishments": [],
   "contact": [],
   "courses": [],
   "educations": [
     {
-      "date1": "2018",
-      "title": "Epitech Executive",
-      "url": "https://www.linkedin.com/company/3059194/",
+      "date1": "2016",
+      "date2": "2019",
+      "degree": "Programme grande école, Marketing",
+      "description": "The mission of the BIB program is to provide students with a broad introduction to management, international business, foreign cultures and foreign languages which will allow them to work in a diverse environment or pursue further graduate management studies.",
+      "skills": [
+        {
+          "title": "Marketing digital",
+        },
+        {
+          "title": "Growth hacking",
+        },
+        {
+          "title": "Marketing",
+        },
+      ],
+      "title": "Grenoble Ecole de Management",
+      "url": "https://www.linkedin.com/company/18927/",
     },
     {
-      "date1": "1999",
-      "date2": "2000",
-      "degree": "DU MBR, Multimédia, Bases de données et Réseaux",
-      "title": "Université de Nice-Sophia Antipolis",
-      "url": "https://www.linkedin.com/search/results/all/?keywords=Universit%C3%A9+de+Nice-Sophia+Antipolis",
-    },
-    {
-      "date1": "1997",
-      "date2": "1999",
-      "degree": "IUT Informatique, Génie Logiciel, Informatique",
-      "title": "Université Côte d’Azur",
-      "url": "https://www.linkedin.com/company/10826935/",
+      "date1": "2014",
+      "date2": "2016",
+      "degree": "BTS NRC (Négociation et Relation Client), Commerce international / commerce",
+      "title": "Lycée Emile Dubois",
+      "url": "https://www.linkedin.com/search/results/all/?keywords=Lyc%C3%A9e+Emile+Dubois",
     },
   ],
-  "languages": [
-    {
-      "name": "Anglais",
-      "proficiency": undefined,
-    },
-  ],
+  "languages": [],
   "peopleAlsoViewed": [],
   "positions": [
     {
       "companyName": "Bloomays",
-      "date1": "avr. 2020",
+      "contractType": "CDI",
+      "date1": "mai 2020",
       "date2": "aujourd’hui",
-      "description": "Bloomays est une HR tech qui aide les entreprises à créer leurs équipes tech et product en France. 
-
-Le métier du recrutement tech a tout intérêt à se professionnaliser (Data driven, funnel, automation) pour résoudre les difficultés rencontrées des sociétés en hyper croissance dans le sourcing de profils tech et product. 
-
-Le pain point : produire et poursuivre leur développement en recrutement leurs équipes tech / product. Vite et à grande échelle. 
-
-L’approche holistique de Bloomays autour de la fonction recrutement : 
-
-- Un audit des capacités internes de sourcing et recrutement de ses clients
-- La mise en place d’une growth machine pour le sourcing
-- L’introduction des méthodes du marketing pour le recrutement
-- Une offre de recrutement en CDI et de freelances pour étoffer les équipes tech et product, au succès, confiante de son approche et ses outils
-- Une offre de recruteurs externalisés « sous stéroïdes » boostés aux méthodes growth pour des volumes supérieurs à 30 recrutements par an
-- Une Académie pour former les équipes Talent aux méthodes et à la machine growth pour accélérer le sourcing",
+      "description": "Bloomays c’est une start-up exclusivement dédiée à l’accompagnement RH des CTO !
+On résout tous vos problèmes/challenges liés aux équipes: recrutement (interne ou prestation externe), évaluation de ces équipes à réussir leurs projets. Motivation et rétention, mobilités internes, investissement dans les compétences clés/critiques.
+CTO, on fait tout pour te faciliter la vie !",
       "link": "https://www.linkedin.com/company/14823353/",
       "location": "Ville de Paris, Île-de-France, France",
+      "remotePolicy": "Hybride",
       "roles": [],
-      "title": "Chief Technology Officer & Founder",
+      "title": "Growth Hacker",
       "url": "https://www.linkedin.com/company/14823353/",
     },
     {
-      "companyName": "Carbon Saver",
-      "date1": "mars 2020",
-      "date2": "aujourd’hui",
-      "description": "Labellisé par le Ministère de la Transition Ecologique, CARBON SAVER aide l'architecte d'intérieur à éco-concevoir en toute simplicité ses projets d'habitat individuel. Cet outil évalue l'empreinte carbone d'un projet en quelques minutes grâce au score environnemental BAT'IMPACT® . Il comprend les plans de l'architecte et suggère des solutions d'éco-conception grâce à un guide personnalisé. Il permet ainsi un gain de temps et d'argent à l'architecte.",
-      "link": "https://www.linkedin.com/company/68220421/",
-      "location": "Orléans, Centre-Val de Loire, France",
-      "roles": [],
-      "title": "Associé Direction technique",
-      "url": "https://www.linkedin.com/company/68220421/",
-    },
-    {
-      "companyName": "Fenty LVMH",
-      "contractType": "Freelance",
-      "date1": "avr. 2018",
-      "date2": "avr. 2020",
-      "description": "Dans la cadre de la création d'une maison en mode startup pour le compte du groupe LVMH, j'ai accompagné cette nouvelle marque de la structuration des équipes du C-Level aux opérationnels. J'ai mis en place avec la collaboration du groupe l'ensemble du système d'information ainsi que l'architecture e-commerce et la supply chain. Je les ai ensuite accompagné pendant deux ans en tant que mentor sur de nombreux aspects stratégiques (CRM, e-commerce, performance, PIM, DAM, ...)",
-      "link": "https://www.linkedin.com/search/results/all/?keywords=Fenty+LVMH",
-      "location": "Région de Paris, France",
-      "roles": [],
-      "title": "Chief Technical Officer",
-      "url": "https://www.linkedin.com/search/results/all/?keywords=Fenty+LVMH",
-    },
-    {
-      "companyName": "Coorpacademy",
-      "date1": "avr. 2015",
-      "date2": "avr. 2018",
-      "link": "https://www.linkedin.com/company/5042033/",
-      "title": "Chief Technology Officer",
-      "url": "https://www.linkedin.com/company/5042033/",
-    },
-    {
-      "companyName": "Ekino",
-      "date1": "sept. 2011",
-      "date2": "avr. 2015",
-      "description": "Chez Ekino, spécialiste des productions WebDev, je suis en charge de l'innovation et de la direction technique sur le pôle Front End & .Net. Je m'occupe également des partenariats techniques sur ces pôles.",
-      "link": "https://www.linkedin.com/company/1707956/",
-      "location": "157 Rue Anatole France, 92300 Levallois-Perret",
-      "roles": [],
-      "title": "Technical Strategist / CTO",
-      "url": "https://www.linkedin.com/company/1707956/",
-    },
-    {
-      "companyName": "Planete Interactive - Isobar France",
+      "companyName": "Brentt",
       "companyNameWithRole": undefined,
-      "link": "https://www.linkedin.com/company/44980/",
+      "link": "https://www.linkedin.com/company/28896199/",
       "roles": [
         {
-          "date1": "janv. 2009",
-          "date2": "sept. 2011",
-          "description": "Recherche et développement appliquée aux innovations marketing.
-Coordination technique des entités du groupe.
-Gestion des partenariats technique et des prestataires de service.
-Mise en place des normes de développement.",
-          "title": "Directeur des développements et des technologies",
+          "date1": "juin 2019",
+          "date2": "févr. 2020",
+          "location": "Paris, Île-de-France, France",
+          "remotePolicy": "Sur site",
+          "title": "Responsable développement commercial marketing",
         },
         {
-          "date1": "janv. 2005",
-          "date2": "déc. 2008",
-          "description": "Direction Technique des équipes de développement .Net / PHP / Java
-Architecture logicielle des sites e-commerce
-R&D
-Sécurité et performance des sites",
+          "date1": "févr. 2019",
+          "date2": "mai 2019",
+          "description": "Stage de fin d'études.",
+          "location": "Paris, Île-de-France, France",
+          "remotePolicy": "Hybride",
           "skills": [
             {
-              "title": "jQuery",
-            },
-            {
-              "title": ".NET Framework",
+              "title": "Marketing",
             },
           ],
-          "title": "CTO",
+          "title": "Assistant responsable marketing",
         },
       ],
-      "url": "https://www.linkedin.com/company/44980/",
+      "url": "https://www.linkedin.com/company/28896199/",
     },
   ],
   "profile": {
     "connections": "Plus de 500 relations",
-    "headline": "CTO On Demand & Partner @Bloomays.com",
+    "headline": "Growth Hacker & Tech Recruiter chez Bloomays",
+    "imageurl": "https://media.licdn.com/dms/image/C4D03AQG5YVR5LWRXBw/profile-displayphoto-shrink_200_200/0/1603268795282?e=1694649600&v=beta&t=sSdfinxPqXcMpfWkPpRXcN56JAB2kvtg3zoGZcmNAAI",
     "location": "Paris, Île-de-France, France",
-    "name": "Loïc Calvy",
-    "summary": "+ de 20 ans d’expérience dans le digital - Conseil stratégique au comité de direction - Rôle transversal de coordination avec les pôles marketing, communication et vente - Capacité à travailler pour un client ou avec une équipe produit / Product ownership - Construction de produits de l’initialisation à l’industrialisation : conception, architecture et scalabilité - Conception et création de plateforme de Cloud SAAS taux de dispo 99,99 % - Mise en place d’organisations agiles : plan de développement, recrutement et management (40 personnes) - Expertises : Web & Mobile & Conversationnel, Agilité, Méthodologie Lean, Tests, Sécurité et Data privacy",
+    "name": "Lina Morel",
+    "summary": "Quoi de mieux qu'un spécialiste de la tech 🌐 pour recruter un profil tech, un spécialiste en Ressources humaines pour recruter un RH. Logique non ? 😁 Je ne me contente pas de remplir des cases et proposer des profils. Je suis avant tout à l’écoute de tout challenge en matière de staffing. Freelances, on vous propose des missions, vous disposez. Décisionnaires de la tech et du digital, pas besoin de vous connecter, de définir vos recherches de compétences, on le fait pour vous, on vous propose des profils ad’hoc, vite. A tous, nous gérons la mission de la façon la plus humaine possible, un suivi hebdomadaire et une marge transparente.",
   },
-  "projects": [
-    {
-      "date": "sept. 2020 - aujourd’hui",
-      "description": "En tant que CTO, j'accompagne Promtime sur la création de leur service SAAS et notamment la mise en place de toute leur stack technique ainsi que des contraintes HDS, RGDP et sécurité ISO 27001
-En tant que CTO, j'accompagne Promtime sur la création de leur service SAAS et notamment la mise en place de toute leur stack technique ainsi que des contraintes HDS, RGDP et sécurité ISO 27001",
-      "link": undefined,
-      "name": undefined,
-    },
-    {
-      "date": "avr. 2018 - aujourd’hui",
-      "description": "Fenty nouvelle marque Luxe de la chanteuse Rihanna en association avec LVMH. 
-LVMH souhaitait s'inspirer des pratiques agile des startup et m'a confié dès le début de l'aventure la mise en place de l'architecture globale, la construction de l’équipe en commençant par le CTO et l'accompagnement agile. J'ai continué à accompagner les équipes sur plusieurs axes stratégiques (devops, cloud, webperf, intégration continue, ...) ainsi que sur la mise en place d'un popup store en moins de quelques semaines. 
-Fenty nouvelle marque Luxe de la chanteuse Rihanna en association avec LVMH. LVMH souhaitait s'inspirer des pratiques agile des startup et m'a confié dès le début de l'aventure la mise en place de l'architecture globale, la construction de l’équipe en commençant par le CTO et l'accompagnement agile. J'ai continué à accompagner les équipes sur plusieurs axes stratégiques (devops, cloud, webperf, intégration continue, ...) ainsi que sur la mise en place d'un popup store en moins de quelques semaines.",
-      "link": undefined,
-      "name": undefined,
-    },
-    {
-      "date": "févr. 2003 - sept. 2011",
-      "description": undefined,
-      "link": undefined,
-      "name": undefined,
-    },
-  ],
+  "projects": [],
   "recommendations": {
-    "given": [
-      {
-        "profileImage": "https://media.licdn.com/dms/image/D4D03AQGE--_p3P4PKw/profile-displayphoto-shrink_100_100/0/1681332130787?e=1694649600&v=beta&t=Om8fI7vcCEvYk5FRnAClgY9AM9rRGRTBFlwySp0j9Wg",
-        "text": "Il y a peu de personnes dont on peut dire qu'ils changent le cours de votre carrière. C'est ce que Loïc en tant que responsable m'a apporté. Il m'a aidé à me transformer et à faire évoluer mon rôle au sein d'Ekino en m'accordant une confiance à toute épreuve.
-J'ai toujours admiré Loïc pour son empathie, mais aussi son expertise extrêmement documentée sur un nombre incalculable de sujets. Qu'il s'agisse d'architecturer des grands projets, de développer des petits prototypes à fort impact, d'évaluer la performance d'applications, de maitriser des nouveautés techniques et technologiques ou avant tout de dénicher des talents, Loïc est toujours à l'état de l'art.",
-        "userDescription": "Head of Platform and Design at La Javaness",
-      },
-      {
-        "profileImage": "https://media.licdn.com/dms/image/D4D03AQGluir1FFa8hg/profile-displayphoto-shrink_100_100/0/1674821673673?e=1694649600&v=beta&t=Z2x9tEox-rVnKTEtFHNII8Y_XEf60Aosqc00QJz3IdM",
-        "text": "Best CTO in the whole world",
-        "userDescription": "On recrute les équipes tech&product I CDI Free ou RPO ✨ I Tech Recruiter 🦾 I Formateur de Tech Recruiters 👨🏻‍🏫",
-      },
-      {
-        "profileImage": "https://media.licdn.com/dms/image/C5603AQGbCWhCOETj7Q/profile-displayphoto-shrink_100_100/0/1528365385982?e=1694649600&v=beta&t=UF9zv5bz5XE7jL3cU9uKYKocuJQ7sjJuzMWmKD7fhdQ",
-        "text": "I really enjoyed working with Loïc, who was a cornerstone in building the Coorpacademy's platform.
-I was impressed by the way he manages people, and after 2 1/2 years working next to him, he became a friend.",
-        "userDescription": "Business Angel, Board Member, Venture Partner, COO at Cardiologs",
-      },
-      {
-        "profileImage": "https://media.licdn.com/dms/image/C5603AQG2WZ7QZvW6Fw/profile-displayphoto-shrink_100_100/0/1609782443518?e=1694649600&v=beta&t=pT5blCfIwAqByLGVOShHKJmwRnRjzYmdhVFlTkxbhz4",
-        "text": "Benoit fait partie des prestataires qui se transforment très vite en partenaire. La pertinence de son accompagnement, son professionnalisme et son expertise ont été un vrai soulagement dans la gestion de notre parc. Toujours disponible et à l’écoute c’est un vrai accélérateur de travailler avec lui et son équipe.",
-        "userDescription": "Gérant / Owner chez Netopie",
-      },
-      {
-        "profileImage": "https://media.licdn.com/dms/image/D4D03AQGE--_p3P4PKw/profile-displayphoto-shrink_100_100/0/1681332130787?e=1694649600&v=beta&t=Om8fI7vcCEvYk5FRnAClgY9AM9rRGRTBFlwySp0j9Wg",
-        "text": "J’ai eu la chance de travailler avec Florian chez Ekino Paris pendant 4 ans au sein de mon équipe. Florian possède toutes les softs skills nécessaires à la réussite d’un projet créatif ou technique. Son énergie, sa pertinence, ses expertises très larges et son enthousiasme permettent de passer rapidement de l’ideation à la création en passant pour le prototypage et le proof of concept. Il y a quelques personnes dans une carrière qui vous marquent professionnellement, Florian fait partie de cette catégorie. J’espère avoir la chance de retravailler avec lui un jour.",
-        "userDescription": "Head of Platform and Design at La Javaness",
-      },
-      {
-        "profileImage": "https://media.licdn.com/dms/image/C5603AQGbCWhCOETj7Q/profile-displayphoto-shrink_100_100/0/1528365385982?e=1694649600&v=beta&t=UF9zv5bz5XE7jL3cU9uKYKocuJQ7sjJuzMWmKD7fhdQ",
-        "text": "J’ai travaillé avec de nombreux Directeurs Finacier dans ma carrière. Il y a un un avant et un après Nicolas, je n’avais pas pris la mesure de ce poste clef au sein d’une startup. Nicolas a une approche très pragmatique des sujets qu’il traite et sait rendre passionnant des aspects financiers opaques à bon nombre de collaborateurs. Grave à son savoir et son énergie, il a su transmettre le goût des chiffres et de la précisions à beaucoup de membre de Coorpacademy. J’ai été également marqué par sa capacité « d’alternative thinking » à aller chercher des solutions innovantes et à savoir les mettre en œuvre. Côté management, il sait faire et faire faire, la délégation n’est pas de soucis pour lui et ses équipes semblaient heureuse de cela. Il fait partie de rares personnes qui font avancer les sujets et qui amènent plus de solutions que de questions. Sur la plan humain. Il s’intéresse à tous et est très présent dans la vie de l’entreprise à tous les niveaux. Je n’ai pas peur de la dire c’est le meilleur DAF avec qui j’ai pu collaborer.",
-        "userDescription": "Business Angel, Board Member, Venture Partner, COO at Cardiologs",
-      },
-    ],
+    "given": [],
     "givenCount": "0",
     "received": [],
     "receivedCount": "0",
   },
   "skills": [
     {
-      "title": "jQuery",
+      "title": "Développement commercial",
     },
     {
-      "title": "Node.js",
+      "title": "Marketing digital",
     },
     {
-      "title": "Amazon Web Services",
+      "title": "Growth hacking",
     },
     {
-      "title": "IT architectures",
+      "title": "Test A/B",
     },
     {
-      "title": "User Experience",
+      "title": "Marketing",
     },
     {
-      "title": "Scrum",
+      "title": "Optimisation des conversations",
     },
     {
-      "title": "Web Applications",
+      "title": "Email marketing",
     },
     {
-      "title": "Mobile Technology",
+      "title": "Optimisation pour les moteurs de recherche (SEO)",
     },
     {
-      "title": "E-commerce",
+      "title": "Acquisition de clients",
     },
     {
-      "title": "UX",
+      "title": "Web analytique",
     },
     {
-      "title": "Web Project Management",
+      "title": "anglais",
     },
     {
-      "title": "Project Delivery",
+      "title": "Recrutement",
     },
     {
-      "title": "Network Engineering",
+      "title": "talent acquisition",
     },
     {
-      "title": "Performance Tuning",
+      "title": "Développement commercial",
     },
     {
-      "title": "SEO",
+      "title": "Marketing digital",
     },
     {
-      "title": "Gestion de projet web",
+      "title": "Growth hacking",
     },
     {
-      "title": "Optimisation des moteurs de recherche (OMR)",
+      "title": "Test A/B",
     },
     {
-      "title": "Kanban",
+      "title": "Marketing",
     },
     {
-      "title": "HTML5",
+      "title": "Email marketing",
     },
     {
-      "title": "IT architectures",
+      "title": "Optimisation pour les moteurs de recherche (SEO)",
     },
     {
-      "title": "User Experience",
+      "title": "Acquisition de clients",
     },
     {
-      "title": "Scrum",
+      "title": "Web analytique",
     },
     {
-      "title": "Web Applications",
+      "title": "Recrutement",
     },
     {
-      "title": "Mobile Technology",
+      "title": "talent acquisition",
     },
     {
-      "title": "E-commerce",
-    },
-    {
-      "title": "UX",
-    },
-    {
-      "title": "Web Project Management",
-    },
-    {
-      "title": "Project Delivery",
-    },
-    {
-      "title": "Network Engineering",
-    },
-    {
-      "title": "Performance Tuning",
-    },
-    {
-      "title": "SEO",
-    },
-    {
-      "title": "Gestion de projet web",
-    },
-    {
-      "title": "Optimisation des moteurs de recherche (OMR)",
-    },
-    {
-      "title": "Kanban",
-    },
-    {
-      "title": "WebSockets",
-    },
-    {
-      "title": "Kinect",
-    },
-    {
-      "title": "Web Performance",
-    },
-    {
-      "title": "DevOps",
-    },
-    {
-      "title": "jQuery",
-    },
-    {
-      "title": "Node.js",
-    },
-    {
-      "title": "Amazon Web Services",
-    },
-    {
-      "title": "HTML5",
-    },
-    {
-      "title": "CSS",
-    },
-    {
-      "title": "C#",
-    },
-    {
-      "title": "MySQL",
-    },
-    {
-      "title": "CSS3",
-    },
-    {
-      "title": "Android",
-    },
-    {
-      "title": "CMS",
-    },
-    {
-      "title": "Operating Systems",
-    },
-    {
-      "title": "iOS",
-    },
-    {
-      "title": "ActionScript",
-    },
-    {
-      "title": "Amazon S3",
-    },
-    {
-      "title": ".NET Framework",
-    },
-    {
-      "title": "Cloudflare",
-    },
-    {
-      "title": "Docker",
-    },
-    {
-      "title": "Microsoft Azure",
-    },
-    {
-      "title": "React.js",
+      "title": "anglais",
     },
   ],
   "volunteerExperience": [],

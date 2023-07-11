@@ -16,7 +16,7 @@ beforeAll(() => {
 
 const urls = [
     'https://www.linkedin.com/in/bertrand-chardon-5876aab/',
-    'https://www.linkedin.com/in/lo%C3%AFc-calvy/'
+    'https://www.linkedin.com/in/lina-morel-9b1b7b1b8/'
     /*'https://www.linkedin.com/in/lina-morel-9b1b7b1b8/',
     'https://www.linkedin.com/in/rosa-barbet-69a6bb220/',
     'https://www.linkedin.com/in/aurore-veneto-5a6034213/'*/
