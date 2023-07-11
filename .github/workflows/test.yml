@@ -20,6 +20,14 @@ jobs:
       with:
         node-version-file: '.nvmrc'
         cache: 'npm'
+    - name: Echo secrets
+      run: |
+          echo $COOKIE_FILE >> tests/cookie.json
+          ls -la  tests/
+      shell: bash
+      env:
+        # Feel free to rename this variable, but make sure to update it everywhere. You should paste your entire file in your secrets
+        COOKIE_FILE : ${{secrets.COOKIE}}
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
