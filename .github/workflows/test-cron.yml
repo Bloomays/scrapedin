@@ -17,24 +17,6 @@ jobs:
       with:
         node-version-file: '.nvmrc'
         cache: 'npm'
-    - name: Notify slack success
-      if: success()
-      uses: voxmedia/github-action-slack-notify-build@v1
-      with:
-        channel: corpo-product-scrapedin
-        status: SUCCESS
-        color: good
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-    - name: Notify slack fail
-      if: failure()
-      uses: voxmedia/github-action-slack-notify-build@v1
-      with:
-        channel: corpo-product-scrapedin
-        status: FAILED
-        color: danger
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
     - name: Echo secrets
       run: |
           echo $COOKIE_FILE >> tests/cookie.json
