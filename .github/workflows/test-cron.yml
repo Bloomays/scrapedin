@@ -4,6 +4,7 @@
 name: CRON Test CI
 
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 6 * * *'    # At every day
 jobs:
