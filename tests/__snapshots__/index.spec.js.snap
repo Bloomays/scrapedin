@@ -466,8 +466,7 @@ En tant que CTO, j'accompagne Promtime sur la création de leur service SAAS et 
       "date": "avr. 2018 - aujourd’hui",
       "description": "Fenty nouvelle marque Luxe de la chanteuse Rihanna en association avec LVMH. 
 LVMH souhaitait s'inspirer des pratiques agile des startup et m'a confié dès le début de l'aventure la mise en place de l'architecture globale, la construction de l’équipe en commençant par le CTO et l'accompagnement agile. J'ai continué à accompagner les équipes sur plusieurs axes stratégiques (devops, cloud, webperf, intégration continue, ...) ainsi que sur la mise en place d'un popup store en moins de quelques semaines. 
-Fenty nouvelle marque Luxe de la chanteuse Rihanna en association avec LVMH. LVMH souhaitait s'inspirer des pratiques agile des startup et m'a confié dès le début de l'aventure la mise en place de l'architecture globale, la construction de l’équipe en commençant par le CTO et l'accompagnement agile. J'ai continué à accompagner les équipes sur plusieurs axes stratégiques (devops, cloud, webperf, intégration continue, ...) ainsi que sur la mise en place d'un popup store en moins de quelques semaines. 
-…voir plus",
+Fenty nouvelle marque Luxe de la chanteuse Rihanna en association avec LVMH. LVMH souhaitait s'inspirer des pratiques agile des startup et m'a confié dès le début de l'aventure la mise en place de l'architecture globale, la construction de l’équipe en commençant par le CTO et l'accompagnement agile. J'ai continué à accompagner les équipes sur plusieurs axes stratégiques (devops, cloud, webperf, intégration continue, ...) ainsi que sur la mise en place d'un popup store en moins de quelques semaines.",
       "link": undefined,
       "name": undefined,
     },
@@ -517,7 +516,179 @@ I was impressed by the way he manages people, and after 2 1/2 years working next
     "received": [],
     "receivedCount": "0",
   },
-  "skills": [],
+  "skills": [
+    {
+      "title": "jQuery",
+    },
+    {
+      "title": "Node.js",
+    },
+    {
+      "title": "Amazon Web Services",
+    },
+    {
+      "title": "IT architectures",
+    },
+    {
+      "title": "User Experience",
+    },
+    {
+      "title": "Scrum",
+    },
+    {
+      "title": "Web Applications",
+    },
+    {
+      "title": "Mobile Technology",
+    },
+    {
+      "title": "E-commerce",
+    },
+    {
+      "title": "UX",
+    },
+    {
+      "title": "Web Project Management",
+    },
+    {
+      "title": "Project Delivery",
+    },
+    {
+      "title": "Network Engineering",
+    },
+    {
+      "title": "Performance Tuning",
+    },
+    {
+      "title": "SEO",
+    },
+    {
+      "title": "Gestion de projet web",
+    },
+    {
+      "title": "Optimisation des moteurs de recherche (OMR)",
+    },
+    {
+      "title": "Kanban",
+    },
+    {
+      "title": "HTML5",
+    },
+    {
+      "title": "IT architectures",
+    },
+    {
+      "title": "User Experience",
+    },
+    {
+      "title": "Scrum",
+    },
+    {
+      "title": "Web Applications",
+    },
+    {
+      "title": "Mobile Technology",
+    },
+    {
+      "title": "E-commerce",
+    },
+    {
+      "title": "UX",
+    },
+    {
+      "title": "Web Project Management",
+    },
+    {
+      "title": "Project Delivery",
+    },
+    {
+      "title": "Network Engineering",
+    },
+    {
+      "title": "Performance Tuning",
+    },
+    {
+      "title": "SEO",
+    },
+    {
+      "title": "Gestion de projet web",
+    },
+    {
+      "title": "Optimisation des moteurs de recherche (OMR)",
+    },
+    {
+      "title": "Kanban",
+    },
+    {
+      "title": "WebSockets",
+    },
+    {
+      "title": "Kinect",
+    },
+    {
+      "title": "Web Performance",
+    },
+    {
+      "title": "DevOps",
+    },
+    {
+      "title": "jQuery",
+    },
+    {
+      "title": "Node.js",
+    },
+    {
+      "title": "Amazon Web Services",
+    },
+    {
+      "title": "HTML5",
+    },
+    {
+      "title": "CSS",
+    },
+    {
+      "title": "C#",
+    },
+    {
+      "title": "MySQL",
+    },
+    {
+      "title": "CSS3",
+    },
+    {
+      "title": "Android",
+    },
+    {
+      "title": "CMS",
+    },
+    {
+      "title": "Operating Systems",
+    },
+    {
+      "title": "iOS",
+    },
+    {
+      "title": "ActionScript",
+    },
+    {
+      "title": "Amazon S3",
+    },
+    {
+      "title": ".NET Framework",
+    },
+    {
+      "title": "Cloudflare",
+    },
+    {
+      "title": "Docker",
+    },
+    {
+      "title": "Microsoft Azure",
+    },
+    {
+      "title": "React.js",
+    },
+  ],
   "volunteerExperience": [],
 }
 `;
