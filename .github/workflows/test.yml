@@ -33,4 +33,4 @@ jobs:
         COOKIE_FILE : ${{secrets.COOKIE}}
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    - run: CI=true npm test
