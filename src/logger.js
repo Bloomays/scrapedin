@@ -1,14 +1,25 @@
 const path = require('path')
 const pkg = require('./package')
 const winston = require('winston')
+
+
+const format = !process.env.CI ? 
+winston.format.combine(
+  winston.format.splat(),
+  winston.format.simple(),
+  winston.format.timestamp(),
+  winston.format.colorize(),
+  winston.format.printf(info => `${pkg.name}: ${info.timestamp} ${info.level}: ${info.message}`)) :
+winston.format.combine(
+  winston.format.splat(),
+  winston.format.simple(),
+  winston.format.timestamp(),
+  winston.format.printf(info => `${pkg.name}: ${info.timestamp} ${info.level}: ${info.message}`)
+);
+
+
 const logger = winston.createLogger({
-  format: winston.format.combine(
-    winston.format.splat(),
-    winston.format.simple(),
-    winston.format.timestamp(),
-    winston.format.colorize(),
-    winston.format.printf(info => `${pkg.name}: ${info.timestamp} ${info.level}: ${info.message}`)
-  ),
+  format: format,
   transports: [new winston.transports.Console()]
 })
 
