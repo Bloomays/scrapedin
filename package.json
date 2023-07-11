@@ -9,10 +9,7 @@
   ],
   "main": "src/scrapedin.js",
   "scripts": {
-    "test": "mocha src/**.test.js",
-    "lint": "standard --fix 'src/*.js'",
-    "coverage": "nyc npm test",
-    "coverage:report": "nyc --reporter=lcov npm test"
+    "test": "jest tests/**.spec.js"
   },
   "repository": {
     "type": "git",
@@ -27,13 +24,7 @@
     "puppeteer": "^19.8.2"
   },
   "devDependencies": {
-    "chai": "4.2.0",
-    "coveralls": "3.0.2",
-    "faker": "4.1.0",
-    "mocha": "5.2.0",
-    "nyc": "^13.1.0",
-    "sinon": "7.2.2",
-    "standard": "12.0.1"
+    "jest": "^29.6.1"
   },
   "engines": {
     "node": ">= 7.6.0"
