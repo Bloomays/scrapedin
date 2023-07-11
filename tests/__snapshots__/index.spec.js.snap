@@ -461,6 +461,9 @@ I was impressed by the way he manages people, and after 2 1/2 years working next
   },
   "skills": [
     {
+      "title": "jQuery",
+    },
+    {
       "title": "Node.js",
     },
     {
@@ -513,12 +516,6 @@ I was impressed by the way he manages people, and after 2 1/2 years working next
     },
     {
       "title": "HTML5",
-    },
-    {
-      "title": "CSS",
-    },
-    {
-      "title": "C#",
     },
     {
       "title": "IT architectures",
@@ -578,7 +575,7 @@ I was impressed by the way he manages people, and after 2 1/2 years working next
       "title": "DevOps",
     },
     {
-      "title": "Computer Architecture",
+      "title": "jQuery",
     },
     {
       "title": "Node.js",
@@ -633,9 +630,6 @@ I was impressed by the way he manages people, and after 2 1/2 years working next
     },
     {
       "title": "React.js",
-    },
-    {
-      "title": "Vue.js",
     },
   ],
   "volunteerExperience": [],
