@@ -4,6 +4,8 @@
 name: Node.js CI
 
 on:
+  schedule:
+    - cron:  '0 6 * * *'    # At every 15th minute
   push:
     branches: [ "*" ]
   pull_request:
