@@ -1,6 +1,7 @@
 const openPage = require("../openPage");
 const scrapSection = require("../scrapSection");
-const scrapSectionHardskills = require('../scrapSkillsSection')
+const scrapSectionHardskills = require('../scrapSkillsSection');
+const scrapMoreSection = require('../scrapMoreSection');
 const scrollToPageBottom = require("./scrollToPageBottom");
 const seeMoreButtons = require("./seeMoreButtons");
 const contactInfo = require("./contactInfo");
@@ -91,8 +92,6 @@ module.exports = async (
 
     const [profile] = await scrapSection(page, template.profile);
     const [about] = await scrapSection(page, template.about);
-    const positions = await scrapSection(page, template.positions);
-    const educations = await scrapSection(page, template.educations);
     const [recommendationsCount] = await scrapSection(
       page,
       template.recommendationsCount
@@ -118,6 +117,10 @@ module.exports = async (
       template.peopleAlsoViewed
     );
     const contact = hasToGetContactInfo ? await contactInfo(page) : [];
+
+    const positions = await scrapMoreSection(page, template.positions, url);
+
+    const educations = await scrapMoreSection(page, template.educations, url);
 
     const skills = await scrapSectionHardskills(page, template.skills);
 
