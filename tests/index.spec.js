@@ -16,9 +16,9 @@ beforeAll(() => {
 
 const urls = [
     ['https://www.linkedin.com/in/bertrand-chardon-5876aab/','bertrand'],
-    /*['https://www.linkedin.com/in/lina-morel-9b1b7b1b8/', 'lina'],
+    ['https://www.linkedin.com/in/lina-morel-9b1b7b1b8/', 'lina'],
     ['https://www.linkedin.com/in/rosa-barbet-69a6bb220/', 'rosa'],
-    ['https://www.linkedin.com/in/aurore-veneto-5a6034213/', 'aurore']*/
+    ['https://www.linkedin.com/in/aurore-veneto-5a6034213/', 'aurore']
 ];
 
 test.each(urls)("should get profiles properly", async(url, name) => {
@@ -29,7 +29,7 @@ test.each(urls)("should get profiles properly", async(url, name) => {
         }
         const options = {
             cookies: JSON.parse(cookies),
-            isHeadless: false,
+            isHeadless: true,
             hasToLog: true,
         };
         const profileScraper = await scrapedin(options);
