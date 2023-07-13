@@ -6,7 +6,26 @@ exports[`should get profiles properly 1`] = `
     "text": "Ruby on Rails / Node.js developer with a knack for bleeding edge technologies. Specialties: front/back end web development.",
   },
   "accomplishments": [],
-  "contact": [],
+  "contact": [
+    {
+      "links": [
+        "https://www.linkedin.com/in/bertrand-chardon-5876aab",
+      ],
+      "type": "Profil de Bertrand",
+      "values": [
+        "linkedin.com/in/bertrand-chardon-5876aab",
+      ],
+    },
+    {
+      "links": [
+        "http://www.smartdate.com/",
+      ],
+      "type": "Site web",
+      "values": [
+        "smartdate.com (Entreprise)",
+      ],
+    },
+  ],
   "courses": [],
   "educations": [
     {
@@ -315,7 +334,32 @@ exports[`should get profiles properly 2`] = `
     "text": "Quoi de mieux qu'un spécialiste de la tech 🌐 pour recruter un profil tech, un spécialiste en Ressources humaines pour recruter un RH. Logique non ? 😁 Je ne me contente pas de remplir des cases et proposer des profils. Je suis avant tout à l’écoute de tout challenge en matière de staffing. Freelances, on vous propose des missions, vous disposez. Décisionnaires de la tech et du digital, pas besoin de vous connecter, de définir vos recherches de compétences, on le fait pour vous, on vous propose des profils ad’hoc, vite. A tous, nous gérons la mission de la façon la plus humaine possible, un suivi hebdomadaire et une marge transparente.",
   },
   "accomplishments": [],
-  "contact": [],
+  "contact": [
+    {
+      "links": [
+        "https://www.linkedin.com/in/lina-morel-9b1b7b1b8",
+      ],
+      "type": "Profil de Lina",
+      "values": [
+        "linkedin.com/in/lina-morel-9b1b7b1b8",
+      ],
+    },
+    {
+      "links": [
+        "mailto:lina.morel@bloomays.com",
+      ],
+      "type": "E-mail",
+      "values": [
+        "lina.morel@bloomays.com",
+      ],
+    },
+    {
+      "type": "Connecté",
+      "values": [
+        "13 nov. 2020",
+      ],
+    },
+  ],
   "courses": [],
   "educations": [
     {
@@ -499,7 +543,32 @@ exports[`should get profiles properly 3`] = `
     "text": "Enchantée ! Une 👩🏻 exceptionnelle 🔥, là pour te permettre de trouver ton job TECH/RH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, scale-ups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres à proposer alors n'hésites pas à m'ajouter à ton réseau et à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au bon moment ! Pour ça, pas de secret 🤫, je m'intéresse à ton profil et t'envoie un message spécialement destiné. N'hésite pas à prendre contact avec moi. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
   },
   "accomplishments": [],
-  "contact": [],
+  "contact": [
+    {
+      "links": [
+        "https://www.linkedin.com/in/rosa-barbet-69a6bb220",
+      ],
+      "type": "Profil de Rosa",
+      "values": [
+        "linkedin.com/in/rosa-barbet-69a6bb220",
+      ],
+    },
+    {
+      "links": [
+        "mailto:barbetrosa@gmail.com",
+      ],
+      "type": "E-mail",
+      "values": [
+        "barbetrosa@gmail.com",
+      ],
+    },
+    {
+      "type": "Connecté",
+      "values": [
+        "13 oct. 2021",
+      ],
+    },
+  ],
   "courses": [],
   "educations": [
     {
@@ -623,7 +692,32 @@ exports[`should get profiles properly 4`] = `
     "text": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
   },
   "accomplishments": [],
-  "contact": [],
+  "contact": [
+    {
+      "links": [
+        "https://www.linkedin.com/in/aurore-veneto-5a6034213",
+      ],
+      "type": "Profil de Aurore",
+      "values": [
+        "linkedin.com/in/aurore-veneto-5a6034213",
+      ],
+    },
+    {
+      "links": [
+        "mailto:aurore.veneto@gmail.com",
+      ],
+      "type": "E-mail",
+      "values": [
+        "aurore.veneto@gmail.com",
+      ],
+    },
+    {
+      "type": "Connecté",
+      "values": [
+        "21 juin 2021",
+      ],
+    },
+  ],
   "courses": [],
   "educations": [
     {

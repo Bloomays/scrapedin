@@ -31,6 +31,7 @@ test.each(urls)("should get profiles properly", async(url, name) => {
             cookies: JSON.parse(cookies),
             isHeadless: true,
             hasToLog: true,
+            hasToGetContactInfo: true
         };
         const profileScraper = await scrapedin(options);
         const profile = await profileScraper(url);
