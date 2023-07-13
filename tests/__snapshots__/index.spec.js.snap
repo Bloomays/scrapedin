@@ -492,3 +492,277 @@ CTO, on fait tout pour te faciliter la vie !",
   "volunteerExperience": [],
 }
 `;
+
+exports[`should get profiles properly 3`] = `
+{
+  "about": {
+    "text": "Enchantée ! Une 👩🏻 exceptionnelle 🔥, là pour te permettre de trouver ton job TECH/RH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, scale-ups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres à proposer alors n'hésites pas à m'ajouter à ton réseau et à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au bon moment ! Pour ça, pas de secret 🤫, je m'intéresse à ton profil et t'envoie un message spécialement destiné. N'hésite pas à prendre contact avec moi. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
+  },
+  "accomplishments": [],
+  "contact": [],
+  "courses": [],
+  "educations": [
+    {
+      "date1": "sept. 2012",
+      "date2": "août 2015",
+      "degree": "Diplôme d'études supérieures en management, Management",
+      "title": "Grenoble Ecole de Management",
+      "url": "https://www.linkedin.com/company/18927/",
+    },
+    {
+      "date1": "sept. 2011",
+      "date2": "juin 2012",
+      "degree": "DUT gestion des entreprises et des administrations, Gestion des ressources humaines / administration du personnel, général",
+      "title": "IUT de Paris - Rives de Seine",
+      "url": "https://www.linkedin.com/company/15096879/",
+    },
+  ],
+  "languages": [],
+  "peopleAlsoViewed": [],
+  "positions": [
+    {
+      "companyName": "Bloomays",
+      "contractType": "CDI",
+      "date1": "juil. 2021",
+      "date2": "aujourd’hui",
+      "link": "https://www.linkedin.com/company/14823353/",
+      "title": "Talent and Account Manager (TAM)",
+      "url": "https://www.linkedin.com/company/14823353/",
+    },
+    {
+      "companyName": "Havas",
+      "contractType": "CDI",
+      "date1": "août 2018",
+      "date2": "mai 2021",
+      "link": "https://www.linkedin.com/company/2500/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "title": "Recruteuse technique",
+      "url": "https://www.linkedin.com/company/2500/",
+    },
+    {
+      "companyName": "HP",
+      "contractType": "CDI",
+      "date1": "janv. 2016",
+      "date2": "mai 2018",
+      "link": "https://www.linkedin.com/company/5390798/",
+      "location": "Grenoble, Auvergne-Rhône-Alpes, France",
+      "title": "Chargée de Recrutement",
+      "url": "https://www.linkedin.com/company/5390798/",
+    },
+    {
+      "companyName": "Melloon",
+      "contractType": "Stage",
+      "date1": "juil. 2015",
+      "date2": "janv. 2016",
+      "link": "https://www.linkedin.com/search/results/all/?keywords=Melloon",
+      "location": "Madrid, Communauté de Madrid, Espagne",
+      "title": "Assistante responsable ressources humaines",
+      "url": "https://www.linkedin.com/search/results/all/?keywords=Melloon",
+    },
+  ],
+  "profile": {
+    "connections": "Plus de 500 relations",
+    "headline": "Talent & Account Manager (TAM)",
+    "imageurl": "https://media.licdn.com/dms/image/C4E03AQEZqxhLPOIG6Q/profile-displayphoto-shrink_200_200/0/1631717922127?e=1694649600&v=beta&t=VPhSeT543lAbXidzBO0j7-8FS2L6zqlL82o3VqFhX78",
+    "location": "Paris, Île-de-France, France",
+    "name": "Rosa Barbet",
+    "summary": "Enchantée ! Une 👩🏻 exceptionnelle 🔥, là pour te permettre de trouver ton job TECH/RH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, scale-ups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres à proposer alors n'hésites pas à m'ajouter à ton réseau et à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au bon moment ! Pour ça, pas de secret 🤫, je m'intéresse à ton profil et t'envoie un message spécialement destiné. N'hésite pas à prendre contact avec moi. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
+  },
+  "projects": [],
+  "recommendations": {
+    "given": [],
+    "givenCount": "0",
+    "received": [],
+    "receivedCount": "0",
+  },
+  "skills": [
+    {
+      "title": "Droit",
+    },
+    {
+      "title": "Ressources humaines (RH)",
+    },
+    {
+      "title": "Sourcing",
+    },
+    {
+      "title": "Recrutement",
+    },
+    {
+      "title": "Recrutement technique",
+    },
+    {
+      "title": "Stratégie de sourcing",
+    },
+    {
+      "title": "Droit",
+    },
+    {
+      "title": "Ressources humaines (RH)",
+    },
+    {
+      "title": "Sourcing",
+    },
+    {
+      "title": "Recrutement",
+    },
+    {
+      "title": "Recrutement technique",
+    },
+    {
+      "title": "Stratégie de sourcing",
+    },
+  ],
+  "volunteerExperience": [],
+}
+`;
+
+exports[`should get profiles properly 4`] = `
+{
+  "about": {
+    "text": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
+  },
+  "accomplishments": [],
+  "contact": [],
+  "courses": [],
+  "educations": [
+    {
+      "date1": "2014",
+      "date2": "2017",
+      "degree": "Master en Ressources Humaines, Gestion des ressources humaines / administration du personnel, général",
+      "title": "Rennes School of Business",
+      "url": "https://www.linkedin.com/company/15092681/",
+    },
+    {
+      "date1": "2013",
+      "date2": "2014",
+      "degree": "BTS NRC, Négociations & Relations clients",
+      "title": "ISCG Paris",
+      "url": "https://www.linkedin.com/company/2090001/",
+    },
+  ],
+  "languages": [],
+  "peopleAlsoViewed": [],
+  "positions": [
+    {
+      "companyName": "Bloomays",
+      "contractType": "Temps plein",
+      "date1": "nov. 2020",
+      "date2": "aujourd’hui",
+      "description": "En tant que TAM, j'accompagne mes clients sur le recrutement de leurs équipes !
+
+👉 Tous types de profils : Software Engineer, Tech Lead, CTO, DevOps, QA Engineer, Technical Architect, Product Owner, Product Manager, UX/UI/Product Designers...
+👉 Tous types de technos : JavaScript, Java, PHP, Python, RoR, Go, mobile, blockchain...",
+      "link": "https://www.linkedin.com/company/14823353/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "roles": [],
+      "title": "Talent & Account Manager",
+      "url": "https://www.linkedin.com/company/14823353/",
+    },
+    {
+      "companyName": "Sopra Steria",
+      "contractType": "Temps plein",
+      "date1": "juil. 2018",
+      "date2": "août 2020",
+      "description": "- Sourcing on job-boards, pre-qualifications and physical interview
+- Integration of the candidates and tracking
+- Clients follow-up, prospection and maintain of the portfolio
+- Push strategy and commercial proposals
+- Creation of partnerships towards schools and training institution",
+      "link": "https://www.linkedin.com/company/3054/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "roles": [],
+      "title": "Tech Recruiter",
+      "url": "https://www.linkedin.com/company/3054/",
+    },
+    {
+      "companyName": "Capgemini",
+      "contractType": "CDD",
+      "date1": "sept. 2017",
+      "date2": "mai 2018",
+      "link": "https://www.linkedin.com/company/157240/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "title": "Chargée de Recrutement",
+      "url": "https://www.linkedin.com/company/157240/",
+    },
+  ],
+  "profile": {
+    "connections": "Plus de 500 relations",
+    "headline": "Talent & Account Manager (TAM) chez Bloomays",
+    "imageurl": "https://media.licdn.com/dms/image/C4E03AQEF6ZtbRN_faA/profile-displayphoto-shrink_200_200/0/1622017904455?e=1694649600&v=beta&t=n817lsNfvaAYVlQNQ-AzHgbr939heGqVY1MO3cM2jFw",
+    "location": "Paris, Île-de-France, France",
+    "name": "Aurore Veneto",
+    "summary": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
+  },
+  "projects": [],
+  "recommendations": {
+    "given": [],
+    "givenCount": "0",
+    "received": [],
+    "receivedCount": "0",
+  },
+  "skills": [
+    {
+      "title": "Anglais",
+    },
+    {
+      "title": "Recherche",
+    },
+    {
+      "title": "Marketing",
+    },
+    {
+      "title": "Formation",
+    },
+    {
+      "title": "Compétences analytiques",
+    },
+    {
+      "title": "Système de suivi des candidatures",
+    },
+    {
+      "title": "Sourcing",
+    },
+    {
+      "title": "Stratégie de sourcing",
+    },
+    {
+      "title": "Entretiens",
+    },
+    {
+      "title": "Entretien sur la base des compétences",
+    },
+    {
+      "title": "Marketing",
+    },
+    {
+      "title": "Formation",
+    },
+    {
+      "title": "Sourcing",
+    },
+    {
+      "title": "Stratégie de sourcing",
+    },
+    {
+      "title": "Entretiens",
+    },
+    {
+      "title": "Entretien sur la base des compétences",
+    },
+    {
+      "title": "Système de suivi des candidatures",
+    },
+    {
+      "title": "Recherche",
+    },
+    {
+      "title": "Compétences analytiques",
+    },
+    {
+      "title": "Anglais",
+    },
+  ],
+  "volunteerExperience": [],
+}
+`;
