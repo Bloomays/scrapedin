@@ -30,4 +30,4 @@ jobs:
         # Feel free to rename this variable, but make sure to update it everywhere. You should paste your entire file in your secrets
         COOKIE_FILE : ${{secrets.COOKIE}}
     - run: npm ci
-    - run: CI=true npm test
+    - run: CI=true npm test -- --runInBand
