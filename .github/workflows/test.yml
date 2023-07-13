@@ -31,3 +31,11 @@ jobs:
         COOKIE_FILE : ${{secrets.COOKIE}}
     - run: npm ci
     - run: CI=true npm test -- --runInBand
+    - uses: actions/upload-artifact@v3
+      if: always()
+      name: Upload artifact
+      with:
+        name: profiles
+        path: |
+          tests/profiles
+        retention-days: 15
