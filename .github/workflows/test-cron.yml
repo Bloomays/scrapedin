@@ -28,6 +28,7 @@ jobs:
     - run: npm ci
     - run: CI=true npm test
     - uses: actions/upload-artifact@v3
+      if: always()
       name: Upload artifact
       with:
         name: profiles
