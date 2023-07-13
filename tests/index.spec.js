@@ -15,14 +15,14 @@ beforeAll(() => {
 })
 
 const urls = [
-    'https://www.linkedin.com/in/bertrand-chardon-5876aab/',
-    'https://www.linkedin.com/in/lina-morel-9b1b7b1b8/'
+    ['https://www.linkedin.com/in/bertrand-chardon-5876aab/','bertrand'],
+    ['https://www.linkedin.com/in/lina-morel-9b1b7b1b8/', 'lina']
     /*'https://www.linkedin.com/in/lina-morel-9b1b7b1b8/',
     'https://www.linkedin.com/in/rosa-barbet-69a6bb220/',
     'https://www.linkedin.com/in/aurore-veneto-5a6034213/'*/
 ];
 
-test.each(urls)("should get profiles properly", async(url) => {
+test.each(urls)("should get profiles properly", async(url, name) => {
     try {
         if (!cookies) {
             console.warn('missing cookie.json, must exit');
@@ -36,12 +36,12 @@ test.each(urls)("should get profiles properly", async(url) => {
         const profileScraper = await scrapedin(options);
         const profile = await profileScraper(url);
         // console.log(util.inspect(profile, false, null, true));
-        fs.writeFileSync(__dirname+'/' + profile.profile.name + '.json', JSON.stringify(profile, null, 4));
+        fs.writeFileSync(__dirname+'/profiles/' +name + '.json', JSON.stringify(profile, null, 4));
         expect(profile).toMatchSnapshot();
     }
     catch (error) {
         if (error.image) {
-            fs.writeFile(__dirname + "/out.png", error.image, 'base64', function(err) {
+            fs.writeFile(__dirname + '/profiles/error.' + name + '.png', error.image, 'base64', function(err) {
                 console.log(err);
             });
         }

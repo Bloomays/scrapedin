@@ -66,5 +66,5 @@ typings/
 
 # Package lock was removed from the repo as of b0dad2
 
-tests/*.json
-tests/*.png
+tests/**/*.json
+tests/**/*.png
