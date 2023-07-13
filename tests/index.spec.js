@@ -46,5 +46,6 @@ test.each(urls)("should get profiles properly", async(url, name) => {
             });
         }
         console.error(error.message);
+        expect({}).toMatchSnapshot();
     }
 }, 10000000)
