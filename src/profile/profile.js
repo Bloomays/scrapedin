@@ -117,11 +117,11 @@ module.exports = async (
       template.peopleAlsoViewed
     );
     const contact = hasToGetContactInfo ? await contactInfo(page) : [];
-
+    logger.info(`scrapMoreSection: positions`);
     const positions = await scrapMoreSection(page, template.positions, url);
-
+    logger.info(`scrapMoreSection: educations`);
     const educations = await scrapMoreSection(page, template.educations, url);
-
+    logger.info(`scrapSectionHardskills: skills`);
     const skills = await scrapSectionHardskills(page, template.skills);
 
     await page.close();
