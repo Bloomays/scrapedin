@@ -155,7 +155,7 @@ Involved adding features, testing, fixing bugs and interfacing with a researcher
   "profile": {
     "connections": "264 relations",
     "headline": "Data Engineer at Doctrine",
-    "imageurl": "https://media.licdn.com/dms/image/C4E03AQGugwctMbrDLw/profile-displayphoto-shrink_200_200/0/1622281313791?e=1694649600&v=beta&t=NAyuTQe7RcOSHSkxc88iu0g_azRfE-hLr4K4KHvDpec",
+    "imageurl": Any<String>,
     "location": "Paris et périphérie",
     "name": "Bertrand Chardon",
     "summary": "Ruby on Rails / Node.js developer with a knack for bleeding edge technologies. Specialties: front/back end web development.",
@@ -164,7 +164,7 @@ Involved adding features, testing, fixing bugs and interfacing with a researcher
   "recommendations": {
     "given": [
       {
-        "profileImage": "https://media.licdn.com/dms/image/D4D03AQHpRRLoFLuaYg/profile-displayphoto-shrink_100_100/0/1677476416003?e=1694649600&v=beta&t=S2Ypb5-FagXp_0WWDElBxaEYA-hfKnWlEkKuHOhSGP4",
+        "profileImage": "https://good.com",
         "text": "I had the chance to work with Nilo while developing a dating website in Paris, he was the product owner at the time. His natural empathy and charism as well as his natural North-American efficiency-centered work ethics were an inspiration for everyone.  His greatest strength is his natural ability to reach that perfect balance between smooth human rapport and a result-driven business culture.  It should also be noted that Nilo helped several of his colleagues grow in their respective roles at Smartdate at the time, effectively (and sucessfully) playing the role of a mentor to some of his younger coworkers.  I would highly recommend Nilo to any company.",
         "userDescription": "Technology | Health Care | Innovation | Helping organizations build digital products",
       },
@@ -444,7 +444,7 @@ CTO, on fait tout pour te faciliter la vie !",
   "profile": {
     "connections": "Plus de 500 relations",
     "headline": "Growth Hacker & Tech Recruiter chez Bloomays",
-    "imageurl": "https://media.licdn.com/dms/image/C4D03AQG5YVR5LWRXBw/profile-displayphoto-shrink_200_200/0/1603268795282?e=1694649600&v=beta&t=sSdfinxPqXcMpfWkPpRXcN56JAB2kvtg3zoGZcmNAAI",
+    "imageurl": Any<String>,
     "location": "Paris, Île-de-France, France",
     "name": "Lina Morel",
     "summary": "Quoi de mieux qu'un spécialiste de la tech 🌐 pour recruter un profil tech, un spécialiste en Ressources humaines pour recruter un RH. Logique non ? 😁 Je ne me contente pas de remplir des cases et proposer des profils. Je suis avant tout à l’écoute de tout challenge en matière de staffing. Freelances, on vous propose des missions, vous disposez. Décisionnaires de la tech et du digital, pas besoin de vous connecter, de définir vos recherches de compétences, on le fait pour vous, on vous propose des profils ad’hoc, vite. A tous, nous gérons la mission de la façon la plus humaine possible, un suivi hebdomadaire et une marge transparente.",
@@ -632,7 +632,7 @@ exports[`should get profiles properly 3`] = `
   "profile": {
     "connections": "Plus de 500 relations",
     "headline": "Talent & Account Manager (TAM)",
-    "imageurl": "https://media.licdn.com/dms/image/C4E03AQEZqxhLPOIG6Q/profile-displayphoto-shrink_200_200/0/1631717922127?e=1694649600&v=beta&t=VPhSeT543lAbXidzBO0j7-8FS2L6zqlL82o3VqFhX78",
+    "imageurl": Any<String>,
     "location": "Paris, Île-de-France, France",
     "name": "Rosa Barbet",
     "summary": "Enchantée ! Une 👩🏻 exceptionnelle 🔥, là pour te permettre de trouver ton job TECH/RH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, scale-ups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres à proposer alors n'hésites pas à m'ajouter à ton réseau et à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au bon moment ! Pour ça, pas de secret 🤫, je m'intéresse à ton profil et t'envoie un message spécialement destiné. N'hésite pas à prendre contact avec moi. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
@@ -783,7 +783,7 @@ exports[`should get profiles properly 4`] = `
   "profile": {
     "connections": "Plus de 500 relations",
     "headline": "Talent & Account Manager (TAM) chez Bloomays",
-    "imageurl": "https://media.licdn.com/dms/image/C4E03AQEF6ZtbRN_faA/profile-displayphoto-shrink_200_200/0/1622017904455?e=1694649600&v=beta&t=n817lsNfvaAYVlQNQ-AzHgbr939heGqVY1MO3cM2jFw",
+    "imageurl": Any<String>,
     "location": "Paris, Île-de-France, France",
     "name": "Aurore Veneto",
     "summary": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
