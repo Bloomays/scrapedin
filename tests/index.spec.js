@@ -60,6 +60,6 @@ test.each(urls)("should get profiles properly", async(url, name, nbReco) => {
             profile: {
                 imageurl: expect.any(String)
             }
-        });
+        }, name);
     }
 }, 10000000)

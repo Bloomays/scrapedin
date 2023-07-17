@@ -1,6 +1,181 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should get profiles properly 1`] = `
+exports[`should get profiles properly: aurore 1`] = `
+{
+  "about": {
+    "text": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
+  },
+  "accomplishments": [],
+  "contact": [
+    {
+      "links": [
+        "https://www.linkedin.com/in/aurore-veneto-5a6034213",
+      ],
+      "type": "Profil de Aurore",
+      "values": [
+        "linkedin.com/in/aurore-veneto-5a6034213",
+      ],
+    },
+    {
+      "links": [
+        "mailto:aurore.veneto@gmail.com",
+      ],
+      "type": "E-mail",
+      "values": [
+        "aurore.veneto@gmail.com",
+      ],
+    },
+    {
+      "type": "Connecté",
+      "values": [
+        "21 juin 2021",
+      ],
+    },
+  ],
+  "courses": [],
+  "educations": [
+    {
+      "date1": "2014",
+      "date2": "2017",
+      "degree": "Master en Ressources Humaines, Gestion des ressources humaines / administration du personnel, général",
+      "title": "Rennes School of Business",
+      "url": "https://www.linkedin.com/company/15092681/",
+    },
+    {
+      "date1": "2013",
+      "date2": "2014",
+      "degree": "BTS NRC, Négociations & Relations clients",
+      "title": "ISCG Paris",
+      "url": "https://www.linkedin.com/company/2090001/",
+    },
+  ],
+  "languages": [],
+  "peopleAlsoViewed": [],
+  "positions": [
+    {
+      "companyName": "Bloomays",
+      "contractType": "Temps plein",
+      "date1": "nov. 2020",
+      "date2": "aujourd’hui",
+      "description": "En tant que TAM, j'accompagne mes clients sur le recrutement de leurs équipes !
+
+👉 Tous types de profils : Software Engineer, Tech Lead, CTO, DevOps, QA Engineer, Technical Architect, Product Owner, Product Manager, UX/UI/Product Designers...
+👉 Tous types de technos : JavaScript, Java, PHP, Python, RoR, Go, mobile, blockchain...",
+      "link": "https://www.linkedin.com/company/14823353/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "roles": [],
+      "title": "Talent & Account Manager",
+      "url": "https://www.linkedin.com/company/14823353/",
+    },
+    {
+      "companyName": "Sopra Steria",
+      "contractType": "Temps plein",
+      "date1": "juil. 2018",
+      "date2": "août 2020",
+      "description": "- Sourcing on job-boards, pre-qualifications and physical interview
+- Integration of the candidates and tracking
+- Clients follow-up, prospection and maintain of the portfolio
+- Push strategy and commercial proposals
+- Creation of partnerships towards schools and training institution",
+      "link": "https://www.linkedin.com/company/3054/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "roles": [],
+      "title": "Tech Recruiter",
+      "url": "https://www.linkedin.com/company/3054/",
+    },
+    {
+      "companyName": "Capgemini",
+      "contractType": "CDD",
+      "date1": "sept. 2017",
+      "date2": "mai 2018",
+      "link": "https://www.linkedin.com/company/157240/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "title": "Chargée de Recrutement",
+      "url": "https://www.linkedin.com/company/157240/",
+    },
+  ],
+  "profile": {
+    "connections": "Plus de 500 relations",
+    "headline": "Talent & Account Manager (TAM) chez Bloomays",
+    "imageurl": Any<String>,
+    "location": "Paris, Île-de-France, France",
+    "name": "Aurore Veneto",
+    "summary": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
+  },
+  "projects": [],
+  "recommendations": {
+    "given": [],
+    "givenCount": "0",
+    "received": [],
+    "receivedCount": "0",
+  },
+  "skills": [
+    {
+      "title": "Anglais",
+    },
+    {
+      "title": "Recherche",
+    },
+    {
+      "title": "Marketing",
+    },
+    {
+      "title": "Formation",
+    },
+    {
+      "title": "Compétences analytiques",
+    },
+    {
+      "title": "Système de suivi des candidatures",
+    },
+    {
+      "title": "Sourcing",
+    },
+    {
+      "title": "Stratégie de sourcing",
+    },
+    {
+      "title": "Entretiens",
+    },
+    {
+      "title": "Entretien sur la base des compétences",
+    },
+    {
+      "title": "Marketing",
+    },
+    {
+      "title": "Formation",
+    },
+    {
+      "title": "Sourcing",
+    },
+    {
+      "title": "Stratégie de sourcing",
+    },
+    {
+      "title": "Entretiens",
+    },
+    {
+      "title": "Entretien sur la base des compétences",
+    },
+    {
+      "title": "Système de suivi des candidatures",
+    },
+    {
+      "title": "Recherche",
+    },
+    {
+      "title": "Compétences analytiques",
+    },
+    {
+      "title": "Anglais",
+    },
+  ],
+  "volunteerExperience": [],
+}
+`;
+
+exports[`should get profiles properly: bertrand 1`] = `
 {
   "about": {
     "text": "Ruby on Rails / Node.js developer with a knack for bleeding edge technologies. Specialties: front/back end web development.",
@@ -328,7 +503,7 @@ Involved adding features, testing, fixing bugs and interfacing with a researcher
 }
 `;
 
-exports[`should get profiles properly 2`] = `
+exports[`should get profiles properly: lina 1`] = `
 {
   "about": {
     "text": "Quoi de mieux qu'un spécialiste de la tech 🌐 pour recruter un profil tech, un spécialiste en Ressources humaines pour recruter un RH. Logique non ? 😁 Je ne me contente pas de remplir des cases et proposer des profils. Je suis avant tout à l’écoute de tout challenge en matière de staffing. Freelances, on vous propose des missions, vous disposez. Décisionnaires de la tech et du digital, pas besoin de vous connecter, de définir vos recherches de compétences, on le fait pour vous, on vous propose des profils ad’hoc, vite. A tous, nous gérons la mission de la façon la plus humaine possible, un suivi hebdomadaire et une marge transparente.",
@@ -537,7 +712,7 @@ CTO, on fait tout pour te faciliter la vie !",
 }
 `;
 
-exports[`should get profiles properly 3`] = `
+exports[`should get profiles properly: rosa 1`] = `
 {
   "about": {
     "text": "Enchantée ! Une 👩🏻 exceptionnelle 🔥, là pour te permettre de trouver ton job TECH/RH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, scale-ups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres à proposer alors n'hésites pas à m'ajouter à ton réseau et à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au bon moment ! Pour ça, pas de secret 🤫, je m'intéresse à ton profil et t'envoie un message spécialement destiné. N'hésite pas à prendre contact avec moi. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
@@ -680,181 +855,6 @@ exports[`should get profiles properly 3`] = `
     },
     {
       "title": "Stratégie de sourcing",
-    },
-  ],
-  "volunteerExperience": [],
-}
-`;
-
-exports[`should get profiles properly 4`] = `
-{
-  "about": {
-    "text": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
-  },
-  "accomplishments": [],
-  "contact": [
-    {
-      "links": [
-        "https://www.linkedin.com/in/aurore-veneto-5a6034213",
-      ],
-      "type": "Profil de Aurore",
-      "values": [
-        "linkedin.com/in/aurore-veneto-5a6034213",
-      ],
-    },
-    {
-      "links": [
-        "mailto:aurore.veneto@gmail.com",
-      ],
-      "type": "E-mail",
-      "values": [
-        "aurore.veneto@gmail.com",
-      ],
-    },
-    {
-      "type": "Connecté",
-      "values": [
-        "21 juin 2021",
-      ],
-    },
-  ],
-  "courses": [],
-  "educations": [
-    {
-      "date1": "2014",
-      "date2": "2017",
-      "degree": "Master en Ressources Humaines, Gestion des ressources humaines / administration du personnel, général",
-      "title": "Rennes School of Business",
-      "url": "https://www.linkedin.com/company/15092681/",
-    },
-    {
-      "date1": "2013",
-      "date2": "2014",
-      "degree": "BTS NRC, Négociations & Relations clients",
-      "title": "ISCG Paris",
-      "url": "https://www.linkedin.com/company/2090001/",
-    },
-  ],
-  "languages": [],
-  "peopleAlsoViewed": [],
-  "positions": [
-    {
-      "companyName": "Bloomays",
-      "contractType": "Temps plein",
-      "date1": "nov. 2020",
-      "date2": "aujourd’hui",
-      "description": "En tant que TAM, j'accompagne mes clients sur le recrutement de leurs équipes !
-
-👉 Tous types de profils : Software Engineer, Tech Lead, CTO, DevOps, QA Engineer, Technical Architect, Product Owner, Product Manager, UX/UI/Product Designers...
-👉 Tous types de technos : JavaScript, Java, PHP, Python, RoR, Go, mobile, blockchain...",
-      "link": "https://www.linkedin.com/company/14823353/",
-      "location": "Ville de Paris, Île-de-France, France",
-      "roles": [],
-      "title": "Talent & Account Manager",
-      "url": "https://www.linkedin.com/company/14823353/",
-    },
-    {
-      "companyName": "Sopra Steria",
-      "contractType": "Temps plein",
-      "date1": "juil. 2018",
-      "date2": "août 2020",
-      "description": "- Sourcing on job-boards, pre-qualifications and physical interview
-- Integration of the candidates and tracking
-- Clients follow-up, prospection and maintain of the portfolio
-- Push strategy and commercial proposals
-- Creation of partnerships towards schools and training institution",
-      "link": "https://www.linkedin.com/company/3054/",
-      "location": "Ville de Paris, Île-de-France, France",
-      "roles": [],
-      "title": "Tech Recruiter",
-      "url": "https://www.linkedin.com/company/3054/",
-    },
-    {
-      "companyName": "Capgemini",
-      "contractType": "CDD",
-      "date1": "sept. 2017",
-      "date2": "mai 2018",
-      "link": "https://www.linkedin.com/company/157240/",
-      "location": "Ville de Paris, Île-de-France, France",
-      "title": "Chargée de Recrutement",
-      "url": "https://www.linkedin.com/company/157240/",
-    },
-  ],
-  "profile": {
-    "connections": "Plus de 500 relations",
-    "headline": "Talent & Account Manager (TAM) chez Bloomays",
-    "imageurl": Any<String>,
-    "location": "Paris, Île-de-France, France",
-    "name": "Aurore Veneto",
-    "summary": "Hello ! Une recruteuse de feu 👩🏻, là pour t'aider à trouver ton job TECH idéal 🤩 parmi les meilleures opportunités du marché au sein de startups, d'éditeurs de logiciels ou de grands comptes. J'ai régulièrement de nouvelles offres exclusives à proposer alors n'hésites pas à m'ajouter à ton réseau ou à me contacter. 😉 Mon but c'est de te proposer la bonne mission, au parfait moment ! 🕛 Pour ça, pas de secret 🤫, en s'intéressant à ton profil et en t'envoyant un message spécialement destiné. À très vite dans la communauté des Bloomers 👨🏽‍💻👩🏻‍💻",
-  },
-  "projects": [],
-  "recommendations": {
-    "given": [],
-    "givenCount": "0",
-    "received": [],
-    "receivedCount": "0",
-  },
-  "skills": [
-    {
-      "title": "Anglais",
-    },
-    {
-      "title": "Recherche",
-    },
-    {
-      "title": "Marketing",
-    },
-    {
-      "title": "Formation",
-    },
-    {
-      "title": "Compétences analytiques",
-    },
-    {
-      "title": "Système de suivi des candidatures",
-    },
-    {
-      "title": "Sourcing",
-    },
-    {
-      "title": "Stratégie de sourcing",
-    },
-    {
-      "title": "Entretiens",
-    },
-    {
-      "title": "Entretien sur la base des compétences",
-    },
-    {
-      "title": "Marketing",
-    },
-    {
-      "title": "Formation",
-    },
-    {
-      "title": "Sourcing",
-    },
-    {
-      "title": "Stratégie de sourcing",
-    },
-    {
-      "title": "Entretiens",
-    },
-    {
-      "title": "Entretien sur la base des compétences",
-    },
-    {
-      "title": "Système de suivi des candidatures",
-    },
-    {
-      "title": "Recherche",
-    },
-    {
-      "title": "Compétences analytiques",
-    },
-    {
-      "title": "Anglais",
     },
   ],
   "volunteerExperience": [],
