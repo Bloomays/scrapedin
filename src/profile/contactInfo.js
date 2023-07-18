@@ -29,8 +29,8 @@ const getContactInfo = async(page) => {
   const element = await page.$(SEE_MORE_SELECTOR)
   if(element){
     await element.click()
-    const contactInfoIndicatorSelector = '.pv-profile-section__section-info'
-    await page.waitForSelector(contactInfoIndicatorSelector, { timeout: 50000 })
+    const contactInfoIndicatorSelector = '.pv-contact-info'
+    await page.waitForSelector(contactInfoIndicatorSelector, { timeout: 70000 })
         .catch(() => {
           logger.warn('contact info was not found')
         })
