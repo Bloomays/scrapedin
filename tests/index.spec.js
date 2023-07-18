@@ -29,7 +29,7 @@ test.each(urls)("should get profiles properly", async(url, name, nbReco) => {
         }
         const options = {
             cookies: JSON.parse(cookies),
-            isHeadless: false,
+            isHeadless: true,
             hasToLog: true,
             hasToGetContactInfo: true
         };
