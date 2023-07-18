@@ -22,8 +22,8 @@ const template = {
   }
 } 
 const getContactInfo = async(page, url) => {
-  await page.goto(url, {waitUntil: 'domcontentloaded',});
-  await scrollToPageUp(page);
+  await page.goto(`${url}/overlay/contact-info/`, {waitUntil: 'domcontentloaded',});
+  /*await scrollToPageUp(page);
   await page.waitForSelector(SEE_MORE_SELECTOR, { timeout: 30000 })
     .catch(() => {
       logger.warn('contact-info', 'selector not found')
@@ -33,6 +33,7 @@ const getContactInfo = async(page, url) => {
   const element = await page.$(SEE_MORE_SELECTOR)
   if(element){
     await element.click()
+    */
     const contactInfoIndicatorSelector = '.pv-contact-info'
     await page.waitForSelector(contactInfoIndicatorSelector, { timeout: 70000 })
         .catch(async (error) => {
@@ -46,7 +47,7 @@ const getContactInfo = async(page, url) => {
       await closeButton.click()
 
     return contactInfo
-  }
+  //}
   
 }
 
