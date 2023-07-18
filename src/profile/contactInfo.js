@@ -1,5 +1,6 @@
 const logger = require('../logger')(__filename)
 const scrapSection = require('../scrapSection')
+const { takeScreenshotAndThrow } = require("../customerError");
 
 const SEE_MORE_SELECTOR = '#top-card-text-details-contact-info'
 const CLOSE_MODAL_SELECTOR = '.artdeco-modal__dismiss';
@@ -31,8 +32,9 @@ const getContactInfo = async(page) => {
     await element.click()
     const contactInfoIndicatorSelector = '.pv-contact-info'
     await page.waitForSelector(contactInfoIndicatorSelector, { timeout: 70000 })
-        .catch(() => {
-          logger.warn('contact info was not found')
+        .catch(async (error) => {
+          logger.warn('contact info was not found', error.message)
+          await takeScreenshotAndThrow(page, "NO_CONTACT_INFO");
         })
     
     const contactInfo = await scrapSection(page, template)
