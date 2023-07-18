@@ -20,7 +20,8 @@ const template = {
     }
   }
 } 
-const getContactInfo = async(page) => {
+const getContactInfo = async(page, url) => {
+  await page.goto(url, {waitUntil: 'domcontentloaded',});
   await page.waitForSelector(SEE_MORE_SELECTOR, { timeout: 30000 })
     .catch(() => {
       logger.warn('contact-info', 'selector not found')

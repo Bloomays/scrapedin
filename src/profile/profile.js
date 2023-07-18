@@ -116,7 +116,8 @@ module.exports = async (
       page,
       template.peopleAlsoViewed
     );
-    const contact = hasToGetContactInfo ? await contactInfo(page) : [];
+    logger.info(`scrapMoreSection: contactInfo`, hasToGetContactInfo);
+    const contact = hasToGetContactInfo ? await contactInfo(page, url) : [];
     logger.info(`scrapMoreSection: positions`);
     const positions = await scrapMoreSection(page, template.positions, url);
     logger.info(`scrapMoreSection: educations`);
