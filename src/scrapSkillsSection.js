@@ -1,7 +1,9 @@
-module.exports = async (page, section) => {
+module.exports = async (page, section, url) => {
+  await page.goto(url, {waitUntil: 'domcontentloaded',});
+  await page.waitForXPath(section.selector);
   const elements = await page.$x(section.selector);
   if (elements.length > 0){
-    await Promise.all([elements[0].click()]);
+    await Promise.all([page.waitForNavigation({timeout: 5000}), elements[0].click()]);
     await page.waitForSelector('.pvs-list');
   
       skills = await page.evaluate(() =>

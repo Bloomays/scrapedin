@@ -122,7 +122,7 @@ module.exports = async (
     logger.info(`scrapMoreSection: educations`);
     const educations = await scrapMoreSection(page, template.educations, url);
     logger.info(`scrapSectionHardskills: skills`);
-    const skills = await scrapSectionHardskills(page, template.skills);
+    const skills = await scrapSectionHardskills(page, template.skills, url);
 
     await page.close();
     logger.info(`finished scraping url: ${url}`);
