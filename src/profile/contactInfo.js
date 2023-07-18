@@ -1,5 +1,7 @@
 const logger = require('../logger')(__filename)
 const scrapSection = require('../scrapSection')
+const { takeScreenshotAndThrow } = require("../customerError");
+const scrollToPageUp = require("./scrollToPageUp");
 
 const SEE_MORE_SELECTOR = '#top-card-text-details-contact-info'
 const CLOSE_MODAL_SELECTOR = '.artdeco-modal__dismiss';
@@ -19,20 +21,24 @@ const template = {
     }
   }
 } 
-const getContactInfo = async(page) => {
+const getContactInfo = async(page, url) => {
+  await page.goto(`${url}/overlay/contact-info/`, {waitUntil: 'domcontentloaded',});
+  /*await scrollToPageUp(page);
   await page.waitForSelector(SEE_MORE_SELECTOR, { timeout: 30000 })
     .catch(() => {
       logger.warn('contact-info', 'selector not found')
       return {}
     })
-
+  
   const element = await page.$(SEE_MORE_SELECTOR)
   if(element){
     await element.click()
-    const contactInfoIndicatorSelector = '.pv-profile-section__section-info'
-    await page.waitForSelector(contactInfoIndicatorSelector, { timeout: 30000 })
-        .catch(() => {
-          logger.warn('contact info was not found')
+    */
+    const contactInfoIndicatorSelector = '.pv-contact-info'
+    await page.waitForSelector(contactInfoIndicatorSelector, { timeout: 70000 })
+        .catch(async (error) => {
+          logger.warn('contact info was not found', error.message)
+          await takeScreenshotAndThrow(page, "NO_CONTACT_INFO");
         })
     
     const contactInfo = await scrapSection(page, template)
@@ -41,7 +47,7 @@ const getContactInfo = async(page) => {
       await closeButton.click()
 
     return contactInfo
-  }
+  //}
   
 }
 

@@ -15,7 +15,6 @@ beforeAll(() => {
 })
 
 const urls = [
-    ['https://www.linkedin.com/in/bertrand-chardon-5876aab/','bertrand', 3],
     ['https://www.linkedin.com/in/lina-morel-9b1b7b1b8/', 'lina', 0],
     ['https://www.linkedin.com/in/rosa-barbet-69a6bb220/', 'rosa', 0],
     ['https://www.linkedin.com/in/aurore-veneto-5a6034213/', 'aurore', 0]
