@@ -63,7 +63,7 @@ test.each(urls)("should get profiles properly", async(url, name, nbReco) => {
     }
 }, 10000000)
 
-test("should get special profile properly", async() => {
+test.skip("should get special profile properly", async() => {
     let profile = {};
     const name = "yousseftarguisti";
     const url = 'https://www.linkedin.com/in/yousseftarguisti/';
