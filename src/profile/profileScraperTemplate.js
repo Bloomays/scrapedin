@@ -19,40 +19,6 @@ const template = {
     }
   },
   positions: {
-    default:{
-      selector: "//*[@id='experience']/following-sibling::div/ul/li",
-      fields: {
-        title: 'div.display-flex.flex-column.full-width > div > div > div > div > div > div > span',
-        link: {
-          selector: 'a',
-          attribute: 'href'
-        },
-        url: {
-          selector: 'a',
-          attribute: 'href'
-        },
-        companyName: 'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > div.display-flex.flex-column.full-width > span:nth-child(2) > span:nth-child(1)',
-        companyNameWithRole: 'div.display-flex.flex-column.full-width.align-self-center > div > a > div > div > div > div > span',
-        location: 'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > div.display-flex.flex-column.full-width > span:nth-child(4) > span:nth-child(1)',
-        commonLocationRoles : 'li > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > a > span.t-14.t-normal.t-black--light > span:nth-child(1)',
-        description: 'ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(1) > div > ul > li > div > div > div > div > span',
-        date1: 'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > div.display-flex.flex-column.full-width > span:nth-child(3) > span:nth-child(1)',
-        date2: '.pv-entity__bullet-item-v2',
-        skills:'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(2) > div > ul > li > div > div > div > div > span:nth-child(1)',
-        roles: {
-          selector: 'li',
-          hasChildrenFields: true,
-          fields: {
-            title: 'div > div.display-flex.flex-column.full-width.align-self-center > div > a > div > div > div > div > span:nth-child(1)',
-            description: 'li > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li > div > ul > li > div > div > div > div > span:nth-child(1)',
-            date1: 'li > div > div.display-flex.flex-column.full-width.align-self-center > div > a > span:nth-child(2) > span:nth-child(1)',
-            date2: '.pv-entity__bullet-item-v2',
-            skills: 'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(2) > div > ul > li > div > div > div > div > span:nth-child(1)',
-            location: 'li > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > a > span:nth-child(3) > span:nth-child(1)'
-          }
-        }
-      }
-    },
     more:{
       selector: "//li[contains(@id, 'EXPERIENCE-VIEW-DETAILS')]/div/div[contains(@class, 'pvs-entity')and contains(@class, 'pvs-entity--padded')]", 
       fields: {
@@ -69,45 +35,30 @@ const template = {
         companyNameWithRole: 'div.display-flex.flex-column.full-width.align-self-center > div > a > div > div > div > div > span',
         location: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > div.display-flex.flex-column.full-width > span:nth-child(4) > span:nth-child(1)',
         commonLocationRoles : 'li > div > div:nth-child(1) > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > a > span.t-14.t-normal.t-black--light > span:nth-child(1)',//'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > a > span.t-14.t-normal.t-black--light > span:nth-child(1)',
-        description: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li > div > ul > li > div > div > div > span:nth-child(1)',
+        // desc or "found with lk"
+        _li1: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li > div > ul > li > div > div > div > span:nth-child(1)',
         date1: 'div > div.display-flex.flex-row.justify-space-between > div.display-flex.flex-column.full-width > span:nth-child(3) > span:nth-child(1)',
         date2: '.pv-entity__bullet-item-v2',
-        skills:'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(2) > div > ul > li > div > div > div > span:nth-child(1)',
+        // desc or "skill"
+        _li2:'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(2) > div > ul > li > div > div > div > span:nth-child(1)',
+       // skill or null
+        _li3:'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(3) > div > ul > li > div > div > div > span:nth-child(1)',
         roles: {
           selector: 'li',
           hasChildrenFields: true,
           fields: {
             title: 'div > div > div.display-flex.flex-column.full-width.align-self-center > div > a > div',
             description: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li > div > ul > li > div > div > div > span:nth-child(1)',
-            date1: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div > a > span:nth-child(2) > span:nth-child(1)',
-            date2: '.pv-entity__bullet-item-v2',
+            date1: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div > a > span:nth-child(3) > span:nth-child(1)',
             skills:'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(2) > div > ul > li > div > div > div > span:nth-child(1)',
             location: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div > a > span:nth-child(3) > span:nth-child(1)',
+            remotePolicy: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div > a > span:nth-child(4) > span:nth-child(1)'
           }
         }
       }
-    },
-    viewMore: '//a[contains(@href, "/details/experience?profile")]',
+    }
   },
   educations: {
-    default:{
-      selector: "//*[@id='education']/following-sibling::div/ul/li",
-      fields: {
-        title:
-        'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div > a > div > div > div > div > span:nth-child(1)',
-        degree:
-        'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div > a > span:nth-child(2) > span:nth-child(1)',
-        url: {
-          selector: 'a',
-          attribute: 'href'
-        },
-        skills : 'div.pvs-list__outer-container > ul > li:nth-child(1) > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(2) > div > ul > li > div > div > div > div > span:nth-child(1)',
-        //fieldOfStudy: 'div.pvs-list__outer-container > ul > li:nth-child(2) > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > a > span:nth-child(2) > span:nth-child(1)',
-        date1: 'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div > a > span.t-14.t-normal.t-black--light > span:nth-child(1)',
-        date2: '.pv-entity__dates time:nth-child(2)',
-        description: 'div.pvs-list__outer-container > ul > li > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li > div > ul > li > div > div > div > div > span:nth-child(1)'
-      }
-    },
     more: {
       selector: "//li[contains(@id, 'EDUCATION-VIEW-DETAILS')]/div/div[contains(@class, 'pvs-entity')and contains(@class, 'pvs-entity--padded')]",
       fields: {
@@ -125,9 +76,7 @@ const template = {
         date2: '.pv-entity__dates time:nth-child(2)',
         description: 'li > div > div > div.display-flex.flex-column.full-width.align-self-center > div.pvs-list__outer-container > ul > li:nth-child(1) > div > ul > li > div > div > div > span:nth-child(1)',
       }
-    },
-    viewMore: '//a[contains(@href, "/details/education?profile")]',
-    
+    }
   },
   skills: {
     selector: '//a[contains(@href, "details/skills?profile")]',

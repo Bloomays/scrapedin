@@ -62,3 +62,48 @@ test.each(urls)("should get profiles properly", async(url, name, nbReco) => {
         }, name);
     }
 }, 10000000)
+
+test("should get special profile properly", async() => {
+    let profile = {};
+    const name = "yousseftarguisti";
+    const url = 'https://www.linkedin.com/in/yousseftarguisti/';
+    try {
+        if (!cookies) {
+            console.warn('missing cookie.json, must exit');
+            return;
+        }
+        const options = {
+            cookies: JSON.parse(cookies),
+            isHeadless: true,
+            hasToLog: true,
+            hasToGetContactInfo: true
+        };
+        const profileScraper = await scrapedin(options);
+        profile = await profileScraper(url);
+        // console.log(util.inspect(profile, false, null, true));
+        fs.writeFileSync(__dirname+'/profiles/' + name + '.json', JSON.stringify(profile, null, 4));
+        if (profile?.recommendations?.given) {
+            profile.recommendations.given = profile.recommendations.given.map((reco) => {
+                if (reco.profileImage && reco.profileImage.indexOf('https://') === 0) {
+                    reco.profileImage = 'https://good.com'
+                }
+                return reco;
+            });
+        }
+    }
+    catch (error) {
+        if (error.image) {
+            fs.writeFile(__dirname + '/profiles/error.' + name + '.png', error.image, 'base64', function(err) {
+                console.log(err);
+            });
+        }
+        console.error(error.message);
+    }
+    finally {
+        expect(profile).toMatchSnapshot({
+            profile: {
+                imageurl: expect.any(String)
+            }
+        }, name);
+    }
+}, 10000000)

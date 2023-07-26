@@ -18,6 +18,30 @@ module.exports = (profile) => {
     if(position.title){
         position.title = position.title.replace('Company Name\n', '').split('\n')[0]
     }
+
+    if (position._li1 && position._li2 && position._li3) {
+      position.description = position._li2;
+      position.skills = position._li3;
+    } else {
+      position.description = position._li1;
+      position.skills = position._li2;
+    }
+
+    if (!position.skills) {
+      delete position.skills;
+    }
+
+    if (!position.description) {
+      delete position.description;
+    }
+
+    position._li1 = null;
+    position._li2 = null;
+    position._li3 = null;
+    delete position._li1;
+    delete position._li2;
+    delete position._li3;
+
     if(position.description) {
       position.description = position.description.replace('See more', '');
       position.description = position.description.replace('see more', '');
@@ -28,6 +52,7 @@ module.exports = (profile) => {
       position.companyName = splittedCompanyName?.[0].trim();
       position.contractType = splittedCompanyName?.[1].trim();
     }
+
     if (position.skills){
       position.skills = position.skills.replace("Compétences : ", "");
       position.skills = position.skills.split(" · ");
@@ -58,16 +83,16 @@ module.exports = (profile) => {
         if(position?.commonLocationRoles?.includes(' · ')){
           const splittedLocation = position.commonLocationRoles.split(' · ');
           role.location = splittedLocation?.[0].trim();
-          role.remotePolicy = splittedLocation?.[1].trim();
+          role.remotePolicy = role.remotePolicy ?? splittedLocation?.[1].trim();
         }
         if(position.commonLocationRoles && role.location){
-          role.remotePolicy = role.location;
+          role.remotePolicy = role.remotePolicy ?? role.location;
           role.location = position.commonLocationRoles;
         }
         if (role?.location?.includes(' · ')){
           const splittedLocation = role.location.split(' · ');
           role.location = splittedLocation?.[0].trim();
-          role.remotePolicy = splittedLocation?.[1].trim();
+          role.remotePolicy = role.remotePolicy ?? splittedLocation?.[1].trim();
         }
         if (role.skills){
           role.skills = role.skills.replace("Compétences : ", "");

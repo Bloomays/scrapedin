@@ -216,13 +216,13 @@ exports[`should get profiles properly: lina 1`] = `
       "description": "The mission of the BIB program is to provide students with a broad introduction to management, international business, foreign cultures and foreign languages which will allow them to work in a diverse environment or pursue further graduate management studies.",
       "skills": [
         {
-          "title": "Marketing digital",
+          "title": "Marketing",
         },
         {
           "title": "Growth hacking",
         },
         {
-          "title": "Marketing",
+          "title": "Marketing digital",
         },
       ],
       "title": "Grenoble Ecole de Management",
@@ -527,6 +527,461 @@ exports[`should get profiles properly: rosa 1`] = `
     },
     {
       "title": "Stratégie de sourcing",
+    },
+  ],
+  "volunteerExperience": [],
+}
+`;
+
+exports[`should get special profile properly: yousseftarguisti 1`] = `
+{
+  "about": {
+    "text": "Graduate from EDHEC Business School and Master in Management graduate from IAE de Lille, I spent 8 years in product and project management across handling challenges around various industries such as technology, telecommunications, real estate, retail and public administration. Feel free to contact me #Scrum #Agile #Projectmanagement #Transformation #Strategy #Consulting #Safe",
+  },
+  "accomplishments": [],
+  "contact": [
+    {
+      "links": [
+        "https://www.linkedin.com/in/yousseftarguisti",
+      ],
+      "type": "Profil de Youssef",
+      "values": [
+        "linkedin.com/in/yousseftarguisti",
+      ],
+    },
+    {
+      "links": [
+        "mailto:youssef.targuisti@gmail.com",
+      ],
+      "type": "E-mail",
+      "values": [
+        "youssef.targuisti@gmail.com",
+      ],
+    },
+  ],
+  "courses": [
+    {},
+    {},
+  ],
+  "educations": [
+    {
+      "date1": "2010",
+      "date2": "2014",
+      "degree": "Bachelor of Business Administration - BBA , Management / Marketing / Finance / HR / Corporate law",
+      "title": "EDHEC Business School",
+      "url": "https://www.linkedin.com/company/16001/",
+    },
+    {
+      "date1": "2014",
+      "date2": "2015",
+      "degree": "Master's degree, Management of business units, spécialité marketing",
+      "title": "IAE Lille",
+      "url": "https://www.linkedin.com/company/1607828/",
+    },
+  ],
+  "languages": [
+    {
+      "name": "Anglais",
+      "proficiency": "Capacité professionnelle complète",
+    },
+    {
+      "name": "Arabe",
+      "proficiency": "Bilingue ou langue natale",
+    },
+    {
+      "name": "Espagnol",
+      "proficiency": "Compétence professionnelle",
+    },
+  ],
+  "peopleAlsoViewed": [],
+  "positions": [
+    {
+      "companyName": "Sonepar",
+      "contractType": "Temps plein",
+      "date1": "nov. 2022",
+      "date2": "aujourd’hui",
+      "description": "- Within an SAFE project and a international context (more than 250pers), I am supporting SONEPAR (international leader of electrical retail) as Scrum Master for the implementation of Microsoft Dynamics CRM and the rollout of their countries throughout all Europe countries and North America. 
+This project is dedicated to digitalize processes of this leader. More than 80 000 users daily all over the world.
+
+- I lead and coordinate the activity of a team of 8 Hitachi’s Dynamics developers (technical & functional) in UK, Portugal and 1 Product Owner in Spain. I'm also Scrum Master of a Data team including 2 Data Scientists, 2 Data Engineers, 1 QA and 1 Product Owner, located in India, Romania and France.
+
+- I facilitate exchanges, unlock issues and remove impediments between scrum teams and other teams, PMs, arch and the stakeholders and we found solutions. 
+
+- I ensure that the project team applies the Scrum Framework effectively by adopting a participative management mode in order to achieve the objectives throughout the sprints.
+
+- My role is to make the team fully autonomous, committed and productive by leading and facilitating the agile ceremonies (Daily, Sprint Planning, Demo, Retro) by removing obstacles for guarantee the team's velocity.
+
+- I identify impediments and implement improvement actions to respect the delivery quality
+
+- I build KPI's on delivery, production and agile artefacts : 1 release by week, 2 deliveries by sprint, 60/70 SP by sprint
+
+- Technologies used at Sonepar: 
+- Azure Cloud, JIRA, Mural, Confluence, Sharepoint, MS Dynamics, ReactJs, Jenkins, PostGreSql, GIT, Python (Robot Framework),JAVA, SQL, Elastic search, Kubernetes, Sonar, PowerBI, Datalake",
+      "link": "https://www.linkedin.com/company/18324/",
+      "location": "Ville de Paris, Île-de-France, France",
+      "remotePolicy": "À distance",
+      "roles": [],
+      "skills": [
+        {
+          "title": "Big data",
+        },
+        {
+          "title": "Data analytics",
+        },
+        {
+          "title": "Anglais",
+        },
+        {
+          "title": "Amélioration continue",
+        },
+        {
+          "title": "Gestion d’équipe",
+        },
+        {
+          "title": "Gestion de projet",
+        },
+        {
+          "title": "Management",
+        },
+        {
+          "title": "Méthodes agiles",
+        },
+      ],
+      "title": "Scrum master",
+      "url": "https://www.linkedin.com/company/18324/",
+    },
+    {
+      "companyName": "La Poste Groupe",
+      "contractType": "CDI",
+      "date1": "déc. 2021",
+      "date2": "nov. 2022",
+      "description": "- Within an SAFE project and a international context, I am accompanying COLISSIMO (LaPoste Group) as Scrum Master for the improvement of theirs Apps on a project dedicated to last mile delivery. 150 000 users daily all over the France.
+
+- I lead and coordinate the activity of a team of 8 developers in Morrocco, Senegal and 1 product owner in France.
+
+- I facilitate exchanges/links between my team and the stakeholders and found solutions.
+
+- I ensure that the project team applies the Scrum Framework effectively by adopting a participative management mode in order to achieve the objectives throughout the sprints.
+
+- My role is to make the team fully autonomous and productive by leading and facilitating the agile ceremonies (Daily, Sprint Planning, Demo, Retro) by removing obstacles for guarantee the team's velocity.
+
+- I identify impediments and implement improvement actions to respect the delivery quality
+
+- I build KPI's on delivery, production and agile artefacts : 150 000users/days, 1 delivery by sprint.
+
+- Technologies used at Colissimo : 
+- Scala (Play Framework), ReactJs, Electron, Jenkins, PostGreSql, GIT, Python (Robot Framework), Kotlin, JAVA, SQL",
+      "link": "https://www.linkedin.com/company/164661/",
+      "location": "Casablanca-Settat, Maroc",
+      "remotePolicy": "Hybride",
+      "roles": [],
+      "skills": [
+        {
+          "title": "Scrum",
+        },
+        {
+          "title": "Méthodes agiles",
+        },
+      ],
+      "title": "Scrum master",
+      "url": "https://www.linkedin.com/company/164661/",
+    },
+    {
+      "companyName": "LYRIS GROUP",
+      "contractType": "Freelance",
+      "date1": "janv. 2021",
+      "date2": "déc. 2021",
+      "description": "• Build and develop a portfolio of customers to negotiate mandates : 30 clients in 2021
+• Organize appointments for needs analysis and visits with customers
+• Participate in various negotiation meetings, financial, legal, technical
+• Advising company managers in their search for a location 
+• Ensure the coordination of each stakeholders : Architects, Bankers, Geometrists, Engineers...
+• Follow the negotiations until the signature of the lease or the sale agreement : 10 projects validated in 2021",
+      "link": "https://www.linkedin.com/company/10836011/",
+      "location": "Lille, Hauts-de-France, France",
+      "roles": [],
+      "title": "Portfolio Manager",
+      "url": "https://www.linkedin.com/company/10836011/",
+    },
+    {
+      "companyName": "Carrefour market",
+      "contractType": "CDI",
+      "date1": "sept. 2018",
+      "date2": "déc. 2020",
+      "description": "• Coordinate the overall activity of the store and manage the financial operating account in collaboration with the manager
+• Management of a digital project to improve the in-store drive in a complex health context 
+• Animate and organize the commercial life of the store with the department managers: 5 in total
+• Lead weekly meetings and daily speeches
+• Analyse monthly results and define action plans
+• Coach, train and support new department managers: 8 by year
+• Guarantee the quality of our products and stocks in order to improve customer satisfaction 
+• Communicate the store vision with stakeholders",
+      "link": "https://www.linkedin.com/company/38640282/",
+      "location": "Lille, Hauts-de-France, France",
+      "roles": [],
+      "title": "Retail & project Manager",
+      "url": "https://www.linkedin.com/company/38640282/",
+    },
+    {
+      "companyName": "BRICOMAN",
+      "date1": "août 2015",
+      "date2": "juil. 2018",
+      "description": "• Analyzed financial as well as business results of my dedicated perimeter
+• Handled stocks, purchases and product merchandizing
+• Managed the commercial development through events, partnerships and showrooms
+• Developed and implemented a recruitment and training process for my sales team (10 persons)
+• Act as a relay between my team and Top management",
+      "link": "https://www.linkedin.com/company/2706866/",
+      "location": "Région de Strasbourg, France",
+      "roles": [],
+      "title": "Sales Manager",
+      "url": "https://www.linkedin.com/company/2706866/",
+    },
+    {
+      "companyName": "Orange",
+      "date1": "sept. 2014",
+      "date2": "août 2015",
+      "description": "• Analyzed market performances and penetration rates (segment, brand, country) of Orange
+• Worked on trends prediction and delivered recommendations for product improvement
+• Provided to the Top Management with a weekly reporting of each Business Unit’s KPI
+• Inform the stakeholders about the news, the NFC project's vision and impediments",
+      "link": "https://www.linkedin.com/company/1110/",
+      "location": "Technocentre de Chatillon",
+      "roles": [],
+      "title": "Product Manager Assistant - NFC Technology",
+      "url": "https://www.linkedin.com/company/1110/",
+    },
+    {
+      "companyName": "Ville de Roubaix",
+      "date1": "sept. 2013",
+      "date2": "sept. 2014",
+      "description": "• Contributed to the revitalization of Roubaix’s commercial force through events / meet-ups
+• Created an application to animate B2C relationships 
+• Helped tradespeople in administrative requests
+• Managed the commercialization of vacant premises",
+      "link": "https://www.linkedin.com/company/1576211/",
+      "location": "France",
+      "roles": [],
+      "title": "Commercial Development Manager",
+      "url": "https://www.linkedin.com/company/1576211/",
+    },
+    {
+      "companyName": "Darty",
+      "date1": "août 2012",
+      "date2": "août 2013",
+      "description": "• Managed the commercialization of a portfolio of >200 IT products on our online platform
+• Referenced and wrote product descriptions on darty.com 
+• Developed a tool for better decision making at a national scale for store managers",
+      "link": "https://www.linkedin.com/company/15496/",
+      "location": "Région de Paris, France",
+      "roles": [],
+      "title": "Product Manager Assistant - IT Division",
+      "url": "https://www.linkedin.com/company/15496/",
+    },
+  ],
+  "profile": {
+    "connections": "982 abonnés",
+    "headline": "#SCRUM #SAFE #DATA #CRM #ERP #BI",
+    "imageurl": Any<String>,
+    "location": "Paris, Île-de-France, France",
+    "name": "Youssef Targuisti",
+    "summary": "Graduate from EDHEC Business School and Master in Management graduate from IAE de Lille, I spent 8 years in product and project management across handling challenges around various industries such as technology, telecommunications, real estate, retail and public administration. Feel free to contact me #Scrum #Agile #Projectmanagement #Transformation #Strategy #Consulting #Safe",
+  },
+  "projects": [
+    {
+      "date": "janv. 2014 - aujourd’hui",
+      "description": undefined,
+      "link": undefined,
+      "name": undefined,
+    },
+    {
+      "date": "sept. 2011 - aujourd’hui",
+      "description": undefined,
+      "link": undefined,
+      "name": undefined,
+    },
+    {
+      "date": "sept. 2009 - aujourd’hui",
+      "description": undefined,
+      "link": undefined,
+      "name": undefined,
+    },
+  ],
+  "recommendations": {
+    "given": [
+      {
+        "profileImage": "https://good.com",
+        "text": "Bachir, je te recommanderai à n’importe quelle entreprise tellement tu es précieux par ton dynamisme, ta motivation et ton comportement au quotidien. C’est un réel plaisir de travailler avec toi, j’en ai appris tous les jours. Tu es sur tous les fronts, emparai que, à l’écoute, sérieux et autodidacte !Merci pour tout ce que tu m’as appris humainement et professionnellement, je te recommande 1000000 fois !",
+        "userDescription": "Développeur Fullstack | Développeur Android Native 💚",
+      },
+      {
+        "profileImage": "https://good.com",
+        "text": "J’ai travaillé avec Armel pendant 1 petite année et je vous recommande ses compétences. Armel est à l’écoute, il a à cœur de s’améliorer et de faire des efforts au quotidien. Il a un bon mindset d’esprit d’équipe et apporte de la nouveauté grâce à son savoir car il aime apprendre tous les jours.",
+        "userDescription": "Android Software Engineer #AndroidNative #Kotlin",
+      },
+      {
+        "profileImage": "https://good.com",
+        "text": "Je recommande Mohamed pour son savoir, ça curiosité et son aisance relationnelle qui font de lui le collaborateur qu’il vous faut !",
+        "userDescription": "Fullllstack Developer -  Project Manager  -  Github : github.com/momozer",
+      },
+    ],
+    "givenCount": "0",
+    "received": [],
+    "receivedCount": "0",
+  },
+  "skills": [
+    {
+      "title": "Big data",
+    },
+    {
+      "title": "Data analytics",
+    },
+    {
+      "title": "Anglais",
+    },
+    {
+      "title": "Amélioration continue",
+    },
+    {
+      "title": "Gestion d’équipe",
+    },
+    {
+      "title": "Stratégie de commercialisation",
+    },
+    {
+      "title": "Management marketing",
+    },
+    {
+      "title": "Microsoft Office",
+    },
+    {
+      "title": "Responsable produit",
+    },
+    {
+      "title": "BtoB",
+    },
+    {
+      "title": "Commerce de détail",
+    },
+    {
+      "title": "E-commerce",
+    },
+    {
+      "title": "Retail",
+    },
+    {
+      "title": "Stratégie commerciale",
+    },
+    {
+      "title": "B2B",
+    },
+    {
+      "title": "Product Management",
+    },
+    {
+      "title": "Marketing Management",
+    },
+    {
+      "title": "Gestion de projet",
+    },
+    {
+      "title": "Analyse de marché",
+    },
+    {
+      "title": "Compétences analytiques",
+    },
+    {
+      "title": "Big data",
+    },
+    {
+      "title": "Data analytics",
+    },
+    {
+      "title": "Amélioration continue",
+    },
+    {
+      "title": "Stratégie de commercialisation",
+    },
+    {
+      "title": "Management marketing",
+    },
+    {
+      "title": "Responsable produit",
+    },
+    {
+      "title": "BtoB",
+    },
+    {
+      "title": "Commerce de détail",
+    },
+    {
+      "title": "E-commerce",
+    },
+    {
+      "title": "Retail",
+    },
+    {
+      "title": "Stratégie commerciale",
+    },
+    {
+      "title": "B2B",
+    },
+    {
+      "title": "Product Management",
+    },
+    {
+      "title": "Marketing Management",
+    },
+    {
+      "title": "Gestion de projet",
+    },
+    {
+      "title": "Analyse de marché",
+    },
+    {
+      "title": "Développement commercial",
+    },
+    {
+      "title": "Gestion de la relation client (CRM)",
+    },
+    {
+      "title": "Scrum",
+    },
+    {
+      "title": "Méthodes agiles",
+    },
+    {
+      "title": "Microsoft Office",
+    },
+    {
+      "title": "Microsoft Excel",
+    },
+    {
+      "title": "Microsoft PowerPoint",
+    },
+    {
+      "title": "Microsoft Word",
+    },
+    {
+      "title": "Gestion d’équipe",
+    },
+    {
+      "title": "Compétences analytiques",
+    },
+    {
+      "title": "Stratégie",
+    },
+    {
+      "title": "Management",
+    },
+    {
+      "title": "Communication interpersonnelle",
+    },
+    {
+      "title": "Anglais",
+    },
+    {
+      "title": "English",
     },
   ],
   "volunteerExperience": [],
