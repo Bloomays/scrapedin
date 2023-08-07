@@ -28,7 +28,7 @@ jobs:
     - run: npm ci
     - run: CI=true npm test -- --runInBand
     - uses: actions/upload-artifact@v3
-      if: always()
+      if: failure()
       name: Upload artifact
       with:
         name: profiles
