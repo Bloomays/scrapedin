@@ -11,7 +11,7 @@ exports[`should get profiles properly: aurore 1`] = `
       "links": [
         "https://www.linkedin.com/in/aurore-veneto-5a6034213",
       ],
-      "type": "Profil de Aurore",
+      "type": "Aurore’s Profile",
       "values": [
         "linkedin.com/in/aurore-veneto-5a6034213",
       ],
@@ -20,15 +20,15 @@ exports[`should get profiles properly: aurore 1`] = `
       "links": [
         "mailto:aurore.veneto@gmail.com",
       ],
-      "type": "E-mail",
+      "type": "Email",
       "values": [
         "aurore.veneto@gmail.com",
       ],
     },
     {
-      "type": "Connecté",
+      "type": "Connected",
       "values": [
-        "21 juin 2021",
+        "May 28, 2021",
       ],
     },
   ],
@@ -54,9 +54,9 @@ exports[`should get profiles properly: aurore 1`] = `
   "positions": [
     {
       "companyName": "Bloomays",
-      "contractType": "Temps plein",
-      "date1": "nov. 2020",
-      "date2": "aujourd’hui",
+      "contractType": "Full-time",
+      "date1": "Nov 2020",
+      "date2": "Present",
       "description": "En tant que TAM, j'accompagne mes clients sur le recrutement de leurs équipes !
 
 👉 Tous types de profils : Software Engineer, Tech Lead, CTO, DevOps, QA Engineer, Technical Architect, Product Owner, Product Manager, UX/UI/Product Designers...
@@ -69,9 +69,9 @@ exports[`should get profiles properly: aurore 1`] = `
     },
     {
       "companyName": "Sopra Steria",
-      "contractType": "Temps plein",
-      "date1": "juil. 2018",
-      "date2": "août 2020",
+      "contractType": "Full-time",
+      "date1": "Jul 2018",
+      "date2": "Aug 2020",
       "description": "- Sourcing on job-boards, pre-qualifications and physical interview
 - Integration of the candidates and tracking
 - Clients follow-up, prospection and maintain of the portfolio
@@ -85,9 +85,9 @@ exports[`should get profiles properly: aurore 1`] = `
     },
     {
       "companyName": "Capgemini",
-      "contractType": "CDD",
-      "date1": "sept. 2017",
-      "date2": "mai 2018",
+      "contractType": "Contract",
+      "date1": "Sep 2017",
+      "date2": "May 2018",
       "link": "https://www.linkedin.com/company/157240/",
       "location": "Ville de Paris, Île-de-France, France",
       "title": "Chargée de Recrutement",
@@ -95,7 +95,7 @@ exports[`should get profiles properly: aurore 1`] = `
     },
   ],
   "profile": {
-    "connections": "Plus de 500 relations",
+    "connections": "500+ connections",
     "headline": "Talent & Account Manager (TAM) chez Bloomays",
     "imageurl": Any<String>,
     "location": "Paris, Île-de-France, France",
@@ -186,7 +186,7 @@ exports[`should get profiles properly: lina 1`] = `
       "links": [
         "https://www.linkedin.com/in/lina-morel-9b1b7b1b8",
       ],
-      "type": "Profil de Lina",
+      "type": "Lina’s Profile",
       "values": [
         "linkedin.com/in/lina-morel-9b1b7b1b8",
       ],
@@ -195,15 +195,15 @@ exports[`should get profiles properly: lina 1`] = `
       "links": [
         "mailto:lina.morel@bloomays.com",
       ],
-      "type": "E-mail",
+      "type": "Email",
       "values": [
         "lina.morel@bloomays.com",
       ],
     },
     {
-      "type": "Connecté",
+      "type": "Connected",
       "values": [
-        "13 nov. 2020",
+        "Oct 28, 2020",
       ],
     },
   ],
@@ -216,7 +216,7 @@ exports[`should get profiles properly: lina 1`] = `
       "description": "The mission of the BIB program is to provide students with a broad introduction to management, international business, foreign cultures and foreign languages which will allow them to work in a diverse environment or pursue further graduate management studies.",
       "skills": [
         {
-          "title": "Marketing",
+          "title": "Skills: Marketing",
         },
         {
           "title": "Growth hacking",
@@ -241,19 +241,19 @@ exports[`should get profiles properly: lina 1`] = `
   "positions": [
     {
       "companyName": "Bloomays",
-      "contractType": "CDI",
-      "date1": "mai 2020",
-      "date2": "aujourd’hui",
+      "contractType": "Permanent",
+      "date1": "May 2020",
+      "date2": "Present",
       "description": "Bloomays c’est une start-up exclusivement dédiée à l’accompagnement RH des CTO !
 On résout tous vos problèmes/challenges liés aux équipes: recrutement (interne ou prestation externe), évaluation de ces équipes à réussir leurs projets. Motivation et rétention, mobilités internes, investissement dans les compétences clés/critiques.
 CTO, on fait tout pour te faciliter la vie !",
       "link": "https://www.linkedin.com/company/14823353/",
       "location": "Ville de Paris, Île-de-France, France",
-      "remotePolicy": "Hybride",
+      "remotePolicy": "Hybrid",
       "roles": [],
       "skills": [
         {
-          "title": "Growth hacking",
+          "title": "Skills: Growth hacking",
         },
       ],
       "title": "Growth Hacker",
@@ -265,21 +265,21 @@ CTO, on fait tout pour te faciliter la vie !",
       "link": "https://www.linkedin.com/company/28896199/",
       "roles": [
         {
-          "date1": "juin 2019",
-          "date2": "févr. 2020",
+          "date1": "Jun 2019",
+          "date2": "Feb 2020",
           "location": "Paris, Île-de-France, France",
-          "remotePolicy": "Sur site",
+          "remotePolicy": "On-site",
           "title": "Responsable développement commercial marketing",
         },
         {
-          "date1": "févr. 2019",
-          "date2": "mai 2019",
+          "date1": "Feb 2019",
+          "date2": "May 2019",
           "description": "Stage de fin d'études.",
           "location": "Paris, Île-de-France, France",
-          "remotePolicy": "Hybride",
+          "remotePolicy": "Hybrid",
           "skills": [
             {
-              "title": "Marketing",
+              "title": "Skills: Marketing",
             },
           ],
           "title": "Assistant responsable marketing",
@@ -289,7 +289,7 @@ CTO, on fait tout pour te faciliter la vie !",
     },
   ],
   "profile": {
-    "connections": "Plus de 500 relations",
+    "connections": "500+ connections",
     "headline": "Growth Hacker & Tech Recruiter chez Bloomays",
     "imageurl": Any<String>,
     "location": "Paris, Île-de-France, France",
@@ -395,7 +395,7 @@ exports[`should get profiles properly: rosa 1`] = `
       "links": [
         "https://www.linkedin.com/in/rosa-barbet-69a6bb220",
       ],
-      "type": "Profil de Rosa",
+      "type": "Rosa’s Profile",
       "values": [
         "linkedin.com/in/rosa-barbet-69a6bb220",
       ],
@@ -404,30 +404,30 @@ exports[`should get profiles properly: rosa 1`] = `
       "links": [
         "mailto:barbetrosa@gmail.com",
       ],
-      "type": "E-mail",
+      "type": "Email",
       "values": [
         "barbetrosa@gmail.com",
       ],
     },
     {
-      "type": "Connecté",
+      "type": "Connected",
       "values": [
-        "13 oct. 2021",
+        "Sep 20, 2021",
       ],
     },
   ],
   "courses": [],
   "educations": [
     {
-      "date1": "sept. 2012",
-      "date2": "août 2015",
+      "date1": "Sep 2012",
+      "date2": "Aug 2015",
       "degree": "Diplôme d'études supérieures en management, Management",
       "title": "Grenoble Ecole de Management",
       "url": "https://www.linkedin.com/company/18927/",
     },
     {
-      "date1": "sept. 2011",
-      "date2": "juin 2012",
+      "date1": "Sep 2011",
+      "date2": "Jun 2012",
       "degree": "DUT gestion des entreprises et des administrations, Gestion des ressources humaines / administration du personnel, général",
       "title": "IUT de Paris - Rives de Seine",
       "url": "https://www.linkedin.com/company/15096879/",
@@ -438,18 +438,18 @@ exports[`should get profiles properly: rosa 1`] = `
   "positions": [
     {
       "companyName": "Bloomays",
-      "contractType": "CDI",
-      "date1": "juil. 2021",
-      "date2": "aujourd’hui",
+      "contractType": "Permanent",
+      "date1": "Jul 2021",
+      "date2": "Present",
       "link": "https://www.linkedin.com/company/14823353/",
       "title": "Talent and Account Manager (TAM)",
       "url": "https://www.linkedin.com/company/14823353/",
     },
     {
       "companyName": "Havas",
-      "contractType": "CDI",
-      "date1": "août 2018",
-      "date2": "mai 2021",
+      "contractType": "Permanent",
+      "date1": "Aug 2018",
+      "date2": "May 2021",
       "link": "https://www.linkedin.com/company/2500/",
       "location": "Ville de Paris, Île-de-France, France",
       "title": "Recruteuse technique",
@@ -457,9 +457,9 @@ exports[`should get profiles properly: rosa 1`] = `
     },
     {
       "companyName": "HP",
-      "contractType": "CDI",
-      "date1": "janv. 2016",
-      "date2": "mai 2018",
+      "contractType": "Permanent",
+      "date1": "Jan 2016",
+      "date2": "May 2018",
       "link": "https://www.linkedin.com/company/5390798/",
       "location": "Grenoble, Auvergne-Rhône-Alpes, France",
       "title": "Chargée de Recrutement",
@@ -467,9 +467,9 @@ exports[`should get profiles properly: rosa 1`] = `
     },
     {
       "companyName": "Melloon",
-      "contractType": "Stage",
-      "date1": "juil. 2015",
-      "date2": "janv. 2016",
+      "contractType": "Internship",
+      "date1": "Jul 2015",
+      "date2": "Jan 2016",
       "link": "https://www.linkedin.com/search/results/all/?keywords=Melloon",
       "location": "Madrid, Communauté de Madrid, Espagne",
       "title": "Assistante responsable ressources humaines",
@@ -477,7 +477,7 @@ exports[`should get profiles properly: rosa 1`] = `
     },
   ],
   "profile": {
-    "connections": "Plus de 500 relations",
+    "connections": "500+ connections",
     "headline": "Talent & Account Manager (TAM)",
     "imageurl": Any<String>,
     "location": "Paris, Île-de-France, France",
