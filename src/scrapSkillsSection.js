@@ -4,8 +4,7 @@ module.exports = async (page, section, url) => {
   const elements = await page.$x(section.selector);
   if (elements.length > 0){
     await Promise.all([page.waitForNavigation({timeout: 5000}), elements[0].click()]);*/
-    await page.waitForSelector('.pvs-list');
-  
+    await Promise.race([page.waitForSelector('.pvs-list'), page.waitForSelector('.artdeco-empty-state__message')]);
       skills = await page.evaluate(() =>
       Array.from(
         document.querySelectorAll(
