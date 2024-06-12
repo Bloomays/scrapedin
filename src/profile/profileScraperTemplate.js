@@ -13,7 +13,7 @@ const template = {
     }
   },
   about: {
-    selector: "//section[contains(., 'Infos')]//div[contains(@class, 'display-flex') and contains(@class, 'ph5') and contains(@class, 'pv3')]",
+    selector: "//div[contains(@class, 'display-flex') and contains(@class, 'ph5') and contains(@class, 'pv3')]",
     fields: {
       text: 'span[class=visually-hidden]'
     }
